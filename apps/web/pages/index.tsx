@@ -1,11 +1,11 @@
-import { Button } from "@repo/ui/button";
-import { Header } from "@repo/ui/header";
+import { Button } from "@tec/ui/button";
+import { Header } from "@tec/ui/header";
 
 export default function Page() {
   return (
     <>
       <Header text="Web" />
-      <Button />
+       <Button />
     </>
   );
 }
