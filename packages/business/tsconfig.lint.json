@@ -1,0 +1,8 @@
+{
+  "include": ["src", "turbo"],
+  "exclude": ["node_modules", "dist"],
+  "extends": "@tec/typescript-config/library.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+}

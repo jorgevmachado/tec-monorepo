@@ -1,0 +1,30 @@
+{
+  "extends": "@tec/typescript-config/library.json",
+  "include": [ "src/**/*.ts" ],
+  "exclude": [
+    "dist",
+    "build",
+    "**/tests",
+    "**/__mocks__",
+    "**/*.spec.ts",
+    "node_modules",
+    "**/*.spec.tsx"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ],
+    "rootDirs": [ "./dist" ],
+    "moduleResolution": "Bundler"
+  }
+}
