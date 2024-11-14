@@ -25,14 +25,6 @@ ex:
 ├── src
 │   ├── http
 │   |   ├── index.ts
-│   ├── window
-│   |   ├── index.ts
-│   |   ├── cookies
-|   |   |   ├── index.ts
-│   |   ├── local
-|   |   |   ├── index.ts
-│   |   ├── session
-|   |   |   ├── index.ts
 ```
 
 ## How to use?

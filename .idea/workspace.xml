@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create workspace services">
-      <change afterPath="$PROJECT_DIR$/packages/business/turbo/generators/templates/interface.hbs" afterDir="false" />
-    </list>
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create workspace business (wip)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +34,9 @@
     "accountId": "3b48ab11-f65b-4b6c-9ae3-7c882bb227bd"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -86,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
-      <workItem from="1731519960175" duration="12095000" />
+      <workItem from="1731519960175" duration="12936000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -128,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731533621442</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create workspace business (wip)">
+      <option name="closed" value="true" />
+      <created>1731534784872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731534784872</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +156,7 @@
     <MESSAGE value="fix name" />
     <MESSAGE value="node version" />
     <MESSAGE value="create workspace services" />
-    <option name="LAST_COMMIT_MESSAGE" value="create workspace services" />
+    <MESSAGE value="create workspace business (wip)" />
+    <option name="LAST_COMMIT_MESSAGE" value="create workspace business (wip)" />
   </component>
 </project>
