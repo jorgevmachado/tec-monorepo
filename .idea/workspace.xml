@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Text with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/icon/options.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Icon with storybook" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
-      <workItem from="1731611799216" duration="8714000" />
+      <workItem from="1731611799216" duration="9425000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -184,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731619735888</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="create element Icon with storybook">
+      <option name="closed" value="true" />
+      <created>1731621213537</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731621213537</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +206,7 @@
     <MESSAGE value="finish business without unit test" />
     <MESSAGE value="finish tokens with style-dictionary" />
     <MESSAGE value="create element Text with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="create element Text with storybook" />
+    <MESSAGE value="create element Icon with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="create element Icon with storybook" />
   </component>
 </project>
