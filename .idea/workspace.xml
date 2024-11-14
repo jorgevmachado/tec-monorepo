@@ -4,24 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="finish business without unit test">
-      <change afterPath="$PROJECT_DIR$/packages/tokens/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/brands/geek/color.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/border/radius.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/box-shadow.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/breakpoints.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/color.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/dimensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/font/family.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/font/line-height.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/font/size.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/font/weight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/size.json" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="finish tokens with style-dictionary">
+      <change afterPath="$PROJECT_DIR$/packages/ds/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/.storybook/preview.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/text/config.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/text/interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/colors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/fonts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/join-class/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/join-class/joinClass.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/tsconfig.aliases.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/tsconfig.lint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/ds.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/storybook.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/stylesheet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/business/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/business/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/config-eslint/react-internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/config-eslint/react-internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/config-typescript/react-library.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/config-typescript/react-library.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,32 +49,35 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jorgevmachado"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jorgevmachado&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jorgevmachado/tec-monorepo.git",
-    "accountId": "3b48ab11-f65b-4b6c-9ae3-7c882bb227bd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jorgevmachado/tec-monorepo.git&quot;,
+    &quot;accountId&quot;: &quot;3b48ab11-f65b-4b6c-9ae3-7c882bb227bd&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2onz7HM97IWPQMjgTOd8pJsqh6L" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -69,7 +88,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/tokens/src",
+    "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/utils/join-class",
+    "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,13 +101,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/tokens/src" />
-      <recent name="$PROJECT_DIR$/packages/tokens" />
-      <recent name="$PROJECT_DIR$/packages/tokens/src/font" />
-      <recent name="$PROJECT_DIR$/packages/tokens/src/globals" />
-      <recent name="$PROJECT_DIR$/packages/tokens/src/brands/geek" />
+      <recent name="$PROJECT_DIR$/packages/ds/src/utils/join-class" />
+      <recent name="$PROJECT_DIR$/packages/ds/.storybook" />
+      <recent name="$PROJECT_DIR$/packages/ds/src/utils" />
+      <recent name="$PROJECT_DIR$/packages/ds/turbo/generators/templates/elements" />
+      <recent name="$PROJECT_DIR$/packages/ds" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/ds/src/utils/color" />
+      <recent name="$PROJECT_DIR$/packages/ds/turbo/generators/templates" />
       <recent name="$PROJECT_DIR$/packages/tokens/src/globals" />
       <recent name="$PROJECT_DIR$/packages/tokens/src/globals/font" />
       <recent name="$PROJECT_DIR$/packages/services" />
@@ -108,7 +130,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
-      <workItem from="1731519960175" duration="32734000" />
+      <workItem from="1731519960175" duration="35250000" />
+      <workItem from="1731611799216" duration="7453000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -174,17 +197,22 @@
       <option name="project" value="LOCAL" />
       <updated>1731591781203</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="finish tokens with style-dictionary">
+      <option name="closed" value="true" />
+      <created>1731605920387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731605920387</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/packages/services/src/object/index.js" />
-        <option value="$PROJECT_DIR$/packages/services/src/object/object.js" />
-        <option value="$PROJECT_DIR$/packages/services/src/http/http.js" />
-        <option value="$PROJECT_DIR$/packages/services/src/http/index.js" />
+        <option value="$PROJECT_DIR$/packages/ds/.storybook/preview.js" />
       </list>
     </option>
   </component>
@@ -195,6 +223,7 @@
     <MESSAGE value="create workspace services" />
     <MESSAGE value="create workspace business (wip)" />
     <MESSAGE value="finish business without unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish business without unit test" />
+    <MESSAGE value="finish tokens with style-dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish tokens with style-dictionary" />
   </component>
 </project>

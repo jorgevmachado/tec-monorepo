@@ -1,0 +1,59 @@
+{
+  "name": "@tec/ds",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.js",
+      "require": "./dist/*/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "echo 'Add dev script here'",
+    "build": "rimraf dist && tsc && tsc-alias -p tsconfig.aliases.json",
+    "generate:element": "turbo gen ds-element",
+    "generate:component": "turbo gen ds-component",
+    "lint": "eslint . --max-warnings 0",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.4",
+    "@storybook/addon-interactions": "^8.4.4",
+    "@storybook/addon-links": "^8.4.4",
+    "@storybook/addon-onboarding": "^8.4.4",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.4.4",
+    "@storybook/react": "^8.4.4",
+    "@storybook/react-webpack5": "^8.4.4",
+    "@storybook/test": "^8.4.4",
+    "@tec/eslint-config": "*",
+    "@tec/services": "*",
+    "@tec/tokens": "*",
+    "@tec/typescript-config": "*",
+    "@turbo/gen": "^2.2.3",
+    "@types/eslint": "^9.6.1",
+    "@types/react": "^18.3.12",
+    "eslint-plugin-storybook": "^0.11.0",
+    "prop-types": "^15.8.1",
+    "rimraf": "^6.0.1",
+    "storybook": "^8.4.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "sass": "^1.80.7",
+    "sass-loader": "^16.0.3"
+  }
+}
