@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tec/tokens": "*",
     "@tec/ui": "*",
     "@tec/services": "*",
     "@tec/business": "*",

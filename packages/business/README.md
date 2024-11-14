@@ -32,7 +32,7 @@ ex:
 
 ## How to use?
 
-To use a services within the project, just import the service lib and navigate to the desired value
+To use a business within the project, just import the business lib and navigate to the desired value
 
 ```typescript
 import { Auth } from '@tec/business/auth';
@@ -43,17 +43,17 @@ import { Auth } from '@tec/business';
 ## 🏠 Build
 
 ```sh
-make build-services
+make build-business
 ```
 
 ## 🔥 Hot reload
 
 ```sh
-make watch-services
+make watch-business
 ```
 
 ## 🧪 Test
 
 ```sh
-make test-services
+make test-business
 ```
