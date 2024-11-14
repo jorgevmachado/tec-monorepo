@@ -4,40 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="finish tokens with style-dictionary">
-      <change afterPath="$PROJECT_DIR$/packages/ds/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/.storybook/preview.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/text/config.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/text/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/colors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/fonts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/join-class/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/join-class/joinClass.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/tsconfig.aliases.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/tsconfig.lint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/ds.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/storybook.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/stylesheet.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Text with storybook">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/icon/options.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/config-eslint/react-internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/config-eslint/react-internal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/config-typescript/react-library.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/config-typescript/react-library.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
-      <workItem from="1731611799216" duration="7453000" />
+      <workItem from="1731611799216" duration="8714000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -205,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731605920387</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="create element Text with storybook">
+      <option name="closed" value="true" />
+      <created>1731619735888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731619735888</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +203,7 @@
     <MESSAGE value="create workspace business (wip)" />
     <MESSAGE value="finish business without unit test" />
     <MESSAGE value="finish tokens with style-dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish tokens with style-dictionary" />
+    <MESSAGE value="create element Text with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="create element Text with storybook" />
   </component>
 </project>
