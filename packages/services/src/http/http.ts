@@ -1,10 +1,6 @@
 import { formatUrl } from '@/string';
 
-interface RequestConfig<B = any> {
-  body?: B;
-  params?: Record<string, any>;
-  override?: Omit<RequestInit, 'body' | 'method'>;
-}
+import type { RequestConfig, ResponseError } from '@/http/interface';
 
 export abstract class Http {
   private readonly _url: string;
@@ -94,7 +90,7 @@ export abstract class Http {
       .then((response) => this.handle(response as unknown as Response))
       .then((handle) => handle && handle.response)
       .catch((error) => {
-        throw error;
+        throw this.errorMessage(error);
       });
   }
 
@@ -118,4 +114,12 @@ export abstract class Http {
 
     return data;
   }
+
+  private errorMessage = (error: any): ResponseError => {
+    return {
+      error: error?.response?.error ?? 'internal Server Error',
+      message: error?.response?.message ?? 'Internal Server Error',
+      statusCode: error?.response?.statusCode ?? 500
+    };
+  };
 }

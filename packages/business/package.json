@@ -26,6 +26,9 @@
     "test:coverage": "jest --coverage",
     "generate": "turbo gen business"
   },
+  "dependencies": {
+    "@tec/services": "*"
+  },
   "devDependencies": {
     "@tec/eslint-config": "*",
     "@tec/typescript-config": "*",
