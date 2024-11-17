@@ -12,6 +12,7 @@ export type TIcon =
     'google'|
     'camera'|
     'confirm'|
+    'success'|
     'warning'|
     'facebook'|
     'calendar'|
@@ -33,6 +34,7 @@ export const OIcon: Array<TIcon> = [
     'google',
     'camera',
     'confirm',
+    'success',
     'warning',
     'facebook',
     'calendar',

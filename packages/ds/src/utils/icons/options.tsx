@@ -40,6 +40,7 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
         case 'camera':
             return <CiCamera size={size || '1em'} color={color}/>;
         case 'confirm':
+        case 'success':
             return <GiConfirmed size={size || '1em'} color={color}/>;
         case 'warning':
             return <CiWarning size={size || '1em'} color={color}/>;
