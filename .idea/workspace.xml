@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement element button with storybook">
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix element link and button with storybook">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/spinner/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
       <workItem from="1731611799216" duration="35619000" />
-      <workItem from="1731875554261" duration="2578000" />
+      <workItem from="1731875554261" duration="3352000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -241,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731876958282</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix element link and button with storybook">
+      <option name="closed" value="true" />
+      <created>1731878176493</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731878176493</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +276,7 @@
     <MESSAGE value="create element Link with storybook" />
     <MESSAGE value="update gitignore" />
     <MESSAGE value="implement element button with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement element button with storybook" />
+    <MESSAGE value="fix element link and button with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix element link and button with storybook" />
   </component>
 </project>

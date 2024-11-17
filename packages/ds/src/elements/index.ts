@@ -4,3 +4,4 @@ export * from './avatar';
 export * from './image';
 export * from './link';
 export * from './button';
+export * from './spinner';
