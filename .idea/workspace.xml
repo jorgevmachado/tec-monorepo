@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement element spinner with storybook">
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/avatar/Avatar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/avatar/Avatar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/avatar/Avatar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/avatar/Avatar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/avatar/Avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/avatar/Avatar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/avatar/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/avatar/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/Button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/Button.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/link/Link.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/link/Link.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/link/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/link/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/link/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +100,7 @@
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
       <workItem from="1731611799216" duration="35619000" />
-      <workItem from="1731875554261" duration="3933000" />
+      <workItem from="1731875554261" duration="4955000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -270,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731879047943</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix components">
+      <option name="closed" value="true" />
+      <created>1731879535949</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731879535949</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +291,7 @@
     <MESSAGE value="implement element button with storybook" />
     <MESSAGE value="fix element link and button with storybook" />
     <MESSAGE value="implement element spinner with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement element spinner with storybook" />
+    <MESSAGE value="fix components" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix components" />
   </component>
 </project>
