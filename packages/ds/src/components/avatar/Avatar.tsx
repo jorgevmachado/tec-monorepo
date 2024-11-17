@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { type TContext, type TSimplySIze, joinClass } from '../../utils';
 
-import Text from '../text';
+import Text from '../../elements/text';
 
 import './Avatar.scss';
 

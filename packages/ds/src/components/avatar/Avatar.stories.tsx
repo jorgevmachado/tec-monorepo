@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { OContext, OSimplySize, } from '../../utils';
 
-import Avatar from './';
+import Avatar from './index';
 
 const src = 'https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?size=338&ext=jpg&ga=GA1.1.1880011253.1728950400&semt=ais_hybrid';
 
@@ -18,7 +18,7 @@ const meta = {
         initialsLength: 3,
         hasNotification: false,
     },
-    title: 'Elements/Avatar',
+    title: 'Components/Avatar',
     argTypes: {
         src: {
             type: { name: 'string' },

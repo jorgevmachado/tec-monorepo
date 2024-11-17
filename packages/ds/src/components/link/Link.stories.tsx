@@ -6,7 +6,7 @@ import { OColors, OContext, OIcon, OIconPosition, OSimplySize, OWeight } from '.
 
 import { OAppearance } from './interface';
 
-import Link from './';
+import Link from './index';
 
 const meta = {
     args: {
@@ -24,8 +24,7 @@ const meta = {
         notificationClassName: undefined,
         notificationBackgroundColor: undefined,
     },
-    title: 'Elements/Link',
-    component: Link,
+    title: 'Components/Link',
     argTypes: {
         icon: {
             table: {
@@ -113,7 +112,8 @@ const meta = {
             options: OColors,
             control: { type: 'select' },
         },
-    }
+    },
+    component: Link,
 } satisfies Meta<typeof Link>;
 
 export default meta;

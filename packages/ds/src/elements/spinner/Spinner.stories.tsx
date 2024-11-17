@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { OContext } from '../../utils';
 
 import Spinner from './';
-import Link from "../link";
+import Link from "../../components/link";
 
 const meta = {
     args: {

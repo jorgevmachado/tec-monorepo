@@ -6,7 +6,7 @@ import { OColors, OContext, OIcon, OIconPosition, OSimplySize, OWeight } from '.
 
 import { OAppearance } from './interface';
 
-import Button from './';
+import Button from './index';
 
 const meta = {
     args: {
@@ -27,7 +27,7 @@ const meta = {
         notificationClassName: undefined,
         notificationBackgroundColor: undefined
     },
-    title: 'Elements/Button',
+    title: 'Components/Button',
     argTypes: {
         icon: {
             table: {

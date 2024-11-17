@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import { joinClass } from '../../utils';
 
-import Icon from '../icon';
+import Icon from '../../elements/icon';
 
 import type { ButtonProps } from './interface';
 

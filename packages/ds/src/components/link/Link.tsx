@@ -2,7 +2,7 @@ import React from 'react';
 
 import { joinClass } from '../../utils';
 
-import Icon from '../icon';
+import Icon from '../../elements/icon';
 
 import type { LinkProps } from './interface';
 
