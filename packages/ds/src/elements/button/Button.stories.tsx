@@ -280,9 +280,9 @@ export const AppearanceWithNotification: Story = {
 export const AppearanceWithNotificationCustomColors: Story = {
     args: {
         context: 'success',
-        notificationColor: 'white',
+        notificationColor: OColors.find((color) => color === 'white'),
         notificationCounter: 5,
-        notificationBackgroundColor: 'error-70',
+        notificationBackgroundColor: OColors.find((color) => color === 'error-70'),
     },
     render: (args) => (
         <>

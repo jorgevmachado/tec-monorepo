@@ -16,7 +16,14 @@
    * APPEARANCE
    * =======
   */
-  &-appearance__menu {}
+  &.link__appearance--menu {
+    &:hover::after {
+      background-color: $MediumColor;
+    }
+    &:hover {
+      color: $StrongColor;
+    }
+  }
 }
 
 .link {
@@ -83,6 +90,30 @@
     }
     &--bold {
       font-weight: var(--font-weight-bold);
+    }
+  }
+
+  &__appearance--menu {
+    display: flex;
+    position: relative;
+    text-wrap: nowrap;
+    font-size: var(--dimensions-regular);
+    transition: all 0.2s ease-in-out;
+    font-weight: var(--font-weight-medium);
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    &::after {
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      content: "";
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      background-color: transparent;
+    }
+    &:hover::after {
+      width: var(--dimensions-regular);
     }
   }
 

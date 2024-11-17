@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="update gitignore">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/button/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/focus.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/options.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/options.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement element button with storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/button/Button.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/colors/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/colors/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/fonts/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/fonts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +103,7 @@
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
       <workItem from="1731611799216" duration="35619000" />
-      <workItem from="1731875554261" duration="1210000" />
+      <workItem from="1731875554261" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -244,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731864550295</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="implement element button with storybook">
+      <option name="closed" value="true" />
+      <created>1731876958282</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1731876958282</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +253,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="BIG BANG" />
     <MESSAGE value="fix name" />
     <MESSAGE value="node version" />
@@ -269,6 +267,7 @@
     <MESSAGE value="create element Image with storybook but fallback dont work in storybook" />
     <MESSAGE value="create element Link with storybook" />
     <MESSAGE value="update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
+    <MESSAGE value="implement element button with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement element button with storybook" />
   </component>
 </project>

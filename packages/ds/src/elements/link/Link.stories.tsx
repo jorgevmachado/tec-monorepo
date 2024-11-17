@@ -124,33 +124,6 @@ export const Default: Story = {
     args: { children: 'Exemplo' }
 };
 
-
-export const Sizes: Story = {
-    args: {
-        context: 'primary'
-    },
-    render: (args) => (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            { OSimplySize.map((size) => (
-                <Link {...args} key={size} size={size} > {size} </Link>
-            )) }
-        </div>
-    )
-};
-
-export const Weight: Story = {
-    args: {
-        context: 'secondary'
-    },
-    render: (args) => (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            { OWeight.map((weight) => (
-                <Link {...args} key={weight} weight={weight} > {weight} </Link>
-            )) }
-        </div>
-    )
-};
-
 export const Contexts: Story = {
     args: {},
     render: (args) => (
@@ -162,60 +135,91 @@ export const Contexts: Story = {
     )
 };
 
-export const Menu: Story = {
+export const Appearance: Story = {
     args: {
-        appearance: 'menu',
+        context: 'primary'
     },
     render: (args) => (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            { OContext.map((context) => (
-                <Link {...args} key={context} context={context} > {context} </Link>
+            { OAppearance.map((appearance) => (
+                <Link {...args} key={appearance} appearance={appearance} > {appearance} </Link>
             )) }
         </div>
     )
 };
 
-export const WithIconLeft: Story = {
+export const AppearanceWithIconLeft: Story = {
     args: {
         icon: 'react',
-        context: 'primary',
-        children: 'With Icon Left',
-    }
+        context: 'secondary',
+    },
+    render: (args) => (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            { OAppearance.map((appearance) => (
+                <Link {...args} key={appearance} appearance={appearance} > {appearance} </Link>
+            )) }
+        </div>
+    )
 };
 
-export const WithIconRight: Story = {
+export const AppearanceWithIconRight: Story = {
     args: {
         icon: 'react',
-        context: 'primary',
-        children: 'With Icon Right',
+        context: 'info',
         iconPosition: 'right'
-    }
+    },
+    render: (args) => (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            { OAppearance.map((appearance) => (
+                <Link {...args} key={appearance} appearance={appearance} > {appearance} </Link>
+            )) }
+        </div>
+    )
 };
 
-export const WithIconRightCustomColor: Story = {
+export const AppearanceWithIconRightCustomColor: Story = {
     args: {
         icon: 'react',
-        context: 'primary',
-        children: 'With Icon Right',
-        iconColor: 'error-80',
-        iconPosition: 'right',
-    }
+        context: 'success',
+        iconColor: OColors.find((color) => color === 'error-80'),
+        iconPosition: 'right'
+    },
+    render: (args) => (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            { OAppearance.map((appearance) => (
+                <Link {...args} key={appearance} appearance={appearance} > {appearance} </Link>
+            )) }
+        </div>
+    )
 };
 
-export const WithNotificationCount: Story = {
+
+export const AppearanceWithNotification: Story = {
     args: {
-        context: 'primary',
-        children: 'With Notification Count',
+        context: 'attention',
         notificationCounter: 9,
-    }
+    },
+    render: (args) => (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            { OAppearance.map((appearance) => (
+                <Link {...args} key={appearance} appearance={appearance} > {appearance} </Link>
+            )) }
+        </div>
+    )
 };
 
-export const WithNotificationCountCustomColors: Story = {
+export const AppearanceWithNotificationCustom: Story = {
     args: {
-        context: 'primary',
-        children: 'With Notification Count',
-        notificationCounter: 9,
-        notificationColor: 'neutral-90',
-        notificationBackgroundColor: 'neutral-70'
-    }
+        context: 'error',
+        notificationCounter: 29,
+        notificationColor: OColors.find((color) => color === 'neutral-90'),
+        notificationBackgroundColor: OColors.find((color) => color === 'neutral-70'),
+    },
+    render: (args) => (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            { OAppearance.map((appearance) => (
+                <Link {...args} key={appearance} appearance={appearance} > {appearance} </Link>
+            )) }
+        </div>
+    )
 };
