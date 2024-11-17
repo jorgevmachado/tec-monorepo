@@ -38,7 +38,7 @@ export default function Link({
     ]);
     
     const iconClassNameList = joinClass([
-        `${iconPosition ? `link__icon--position-${iconPosition}` : ''}`,
+        `link__icon--position-${iconPosition}`,
         `${iconColor ? `ds-color-${iconColor}` : `ds-color-${context}-100`} `,
         iconClassName
     ]);

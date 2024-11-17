@@ -35,8 +35,7 @@
    * ICONS
    * =======
   */
-  &__icon {
-    &--position{
+  &__icon--position{
       &-left {
         margin-top: var(--dimensions-xx-tiny);
         margin-right: var(--dimensions-x-tiny);
@@ -46,7 +45,6 @@
         margin-left: var(--dimensions-x-tiny);
       }
     }
-  }
 
   /*
    * =======

@@ -1,0 +1,347 @@
+@import "../../styles/main";
+
+@mixin context($StrongLightColor, $MediumLightColor, $WeakLightColor, $WeakDarkColor, $StrongDarkColor) {
+  &.button {
+    border: 1px solid $WeakDarkColor;
+    background-color: $WeakDarkColor;
+
+    &:disabled {
+      color: var(--color-neutral-70);
+      cursor: not-allowed;
+      pointer-events: none;
+      border-color: var(--color-neutral-60);
+      background-color: var(--color-neutral-60);
+    }
+
+    &:hover:not(:focus) {
+      border: 1px solid $StrongLightColor;
+      background-color: $StrongLightColor;
+    }
+
+    &:active, &-selected {
+      border-color: $WeakLightColor;
+      background-color: $WeakLightColor;
+    }
+
+    &__appearance {
+      &--sidebar {
+        color: $StrongDarkColor;
+        &.button {
+          background-color: transparent;
+          &:hover:not(:focus) {
+            border-left: 4px solid transparent;
+          }
+          &:active, &-selected {
+            border-left: 4px solid $StrongDarkColor;
+            background-color: $StrongLightColor;
+          }
+        }
+      }
+      &--outline {
+        color: $WeakLightColor;
+        &.button {
+          background-color: transparent;
+          &:hover:not(:focus) {
+            background-color: $MediumLightColor;
+          }
+          &:active {
+            background-color: $MediumLightColor;
+          }
+        }
+      }
+      &--borderless {
+        &.button {
+          color: $WeakLightColor;
+          border: 1px solid transparent;
+          background-color: transparent;
+          &:hover:not(:focus) {
+            border-color: $MediumLightColor;
+            background-color: $MediumLightColor;
+          }
+
+          &:active {
+            border-color: $MediumLightColor;
+            background-color: $MediumLightColor;
+          }
+        }
+      }
+      &--iconButton {
+        &.button {
+          background-color: var(--color-white);
+
+          &:not(:disabled) {
+            border: 1px solid var(--color-neutral-60);
+            color: $WeakDarkColor;
+          }
+
+          &:hover:not(:focus) {
+            border: 1px solid var(--color-neutral-60);
+            background-color: $StrongLightColor;
+          }
+
+          &:active, &-selected {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  color: var(--color-white);
+  cursor: pointer;
+  user-select: none;
+  font-weight: var(--text-weights-bold);
+  border-radius: var(--border-radius-large);
+  text-decoration: none;
+
+  &:disabled {
+    color: var(--color-neutral-70);
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: var(--color-neutral-60);
+    background-color: var(--color-neutral-60);
+  }
+
+/*
+ * =======
+ * SIZES
+ * =======
+ */
+  &__size {
+    &--small {
+      height: var(--dimensions-xxx-large);
+      padding: 0 1.5rem;
+      line-height: var(--font-line-height-small);
+    }
+    &--medium {
+      height: var(--dimensions-big);
+      padding: 0 1.5rem;
+      line-height: var(--font-line-height-small);
+    }
+    &--large {
+      height: var(--dimensions-xx-big);
+      padding: 0 1.5rem;
+      line-height: var(--font-line-height-small);
+    }
+    &--big {
+      height: var(--dimensions-xxx-big);
+      padding: 0 1.5rem;
+      line-height: var(--font-line-height-small);
+    }
+  }
+
+/*
+ * =======
+ * FLUID
+ * =======
+ */
+  &__fluid {
+    width: 100%;
+  }
+
+/*
+ * =======
+ * FOCUS
+ * =======
+ */
+  &__focus {
+    @include focus;
+  }
+
+/*
+ * =======
+ * WEIGHTS
+ * =======
+ */
+  &__weight{
+    &--normal {
+      font-weight: var(--font-weight-normal);
+    }
+    &--medium {
+      font-weight: var(--font-weight-medium);
+    }
+    &--semibold {
+      font-weight: var(--font-weight-semi-bold);
+    }
+    &--bold {
+      font-weight: var(--font-weight-bold);
+    }
+  }
+
+/*
+ * =======
+ * rounded
+ * =======
+ */
+  &__rounded {
+        border-radius: var(--border-radius-rounded);
+    }
+
+
+/*
+ * =======
+ * NO LABEL
+ * =======
+ */
+  &__no-label {
+    padding: 0;
+    border-radius: var(--size-x-small);
+  }
+
+  /*
+ * =======
+ * APPEARANCE
+ * =======
+ */
+  &__appearance {
+    &--sidebar {
+      width: 100%;
+      border-color: transparent;
+      cursor: pointer;
+      display: flex;
+      padding: 2rem 1.5rem;
+      font-size: 1rem;
+      transition: background 0.1s ease-in;
+      font-weight: var(--font-weight-semi-bold);
+      align-items: center;
+      border-radius: inherit;
+      flex-direction: row;
+      background-color: transparent;
+
+      &:hover:not(:focus) {
+        border-left: 4px solid transparent;
+      }
+
+      &:active, &-selected {
+        color: var(--color-neutral-90);
+      }
+    }
+    &--outline {
+      background-color: transparent;
+    }
+    &--borderless {
+      border: 1px solid transparent;
+      background-color: transparent;
+    }
+    &--iconButton {
+      display: flex;
+      width: var(--dimensions-big);
+      height: var(--dimensions-big);
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-white);
+    }
+  }
+
+  /*
+   * =======
+   * NO LABEL
+   * =======
+   */
+  &__icon--position{
+    &-left {
+      margin-top: var(--dimensions-xx-tiny);
+      margin-right: var(--dimensions-tiny);
+    }
+    &-right {
+      margin-top: var(--dimensions-xx-tiny);
+      margin-left: var(--dimensions-tiny);
+    }
+  }
+
+  &__content {
+    display: flex;
+    &--notification {
+      gap: 11rem;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-left: var(--dimensions-tiny);
+      &-counter {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        font-weight: 500;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+      }
+      @media screen and (min-width: var(--breakpoints-md)) {
+        gap: 6rem;
+      }
+    }
+  }
+}
+
+/*
+ * =======
+ * CONTEXT
+ * =======
+ */
+.button__context--info {
+  @include context(
+    var(--color-info-70),
+    var(--color-info-60),
+    var(--color-info-70),
+    var(--color-info-80),
+    var(--color-info-80)
+  );
+}
+.button__context--error {
+  @include context(
+    var(--color-error-70),
+    var(--color-error-60),
+    var(--color-error-70),
+    var(--color-error-80),
+    var(--color-error-80)
+  );
+}
+.button__context--neutral {
+  @include context(
+    var(--color-neutral-90),
+    var(--color-info-60),
+    var(--color-neutral-90),
+    var(--color-neutral-80),
+    var(--color-info-80)
+  );
+}
+.button__context--success {
+  @include context(
+    var(--color-success-70),
+    var(--color-success-60),
+    var(--color-success-70),
+    var(--color-success-80),
+    var(--color-success-80)
+  );
+}
+.button__context--primary {
+  @include context(
+    var(--color-primary-60),
+    var(--color-primary-70),
+    var(--color-primary-80),
+    var(--color-primary-90),
+    var(--color-primary-100)
+  );
+}
+.button__context--secondary {
+  @include context(
+    var(--color-secondary-60),
+    var(--color-secondary-70),
+    var(--color-secondary-80),
+    var(--color-secondary-90),
+    var(--color-secondary-100)
+  );
+}
+.button__context--attention {
+  @include context(
+    var(--color-attention-70),
+    var(--color-attention-60),
+    var(--color-attention-70),
+    var(--color-attention-80),
+    var(--color-attention-80)
+  );
+}

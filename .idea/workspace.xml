@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Link with storybook">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="update gitignore">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/button/interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/focus.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/options.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/options.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/Link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/colors/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/colors/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/colors/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/fonts/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/fonts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +33,8 @@
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -50,29 +65,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/utils/join-class",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/styles&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/ds/src/styles" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/join-class" />
       <recent name="$PROJECT_DIR$/packages/ds/.storybook" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils" />
       <recent name="$PROJECT_DIR$/packages/ds/turbo/generators/templates/elements" />
-      <recent name="$PROJECT_DIR$/packages/ds" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/sizes" />
@@ -98,7 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
-      <workItem from="1731611799216" duration="24852000" />
+      <workItem from="1731611799216" duration="35619000" />
+      <workItem from="1731875554261" duration="1210000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -220,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731864175604</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update gitignore">
+      <option name="closed" value="true" />
+      <created>1731864550295</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731864550295</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +268,7 @@
     <MESSAGE value="create element Avatar with storybook" />
     <MESSAGE value="create element Image with storybook but fallback dont work in storybook" />
     <MESSAGE value="create element Link with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="create element Link with storybook" />
+    <MESSAGE value="update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
   </component>
 </project>

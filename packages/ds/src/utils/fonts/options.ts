@@ -1,13 +1,4 @@
-export type TVariant =
-    | 'xsmall'
-    | 'small'
-    | 'regular'
-    | 'medium'
-    | 'large'
-    | 'xlarge'
-    | 'big'
-    | 'huge'
-    | 'giant';
+import type { TVariant, TWeight } from './interface';
 
 export const OVariant: Array<TVariant> = [
     'xsmall',
@@ -20,11 +11,5 @@ export const OVariant: Array<TVariant> = [
     'huge',
     'giant'
 ];
-
-export type TWeight =
-    | 'bold'
-    | 'normal'
-    | 'medium'
-    | 'semibold';
 
 export const OWeight: Array<TWeight> = ['normal', 'medium', 'semibold', 'bold' ];
