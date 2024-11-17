@@ -27,4 +27,4 @@ export type TWeight =
     | 'medium'
     | 'semibold';
 
-export const OWeight: Array<TWeight> = ['bold', 'normal', 'medium', 'semibold' ];
+export const OWeight: Array<TWeight> = ['normal', 'medium', 'semibold', 'bold' ];

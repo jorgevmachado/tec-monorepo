@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Image with storybook but fallback dont work in storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/Image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/Image.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/Image.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/link/interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/sizes/options.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/icon/Icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/icon/options.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/.storybook/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/.storybook/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/.storybook/preview.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/styles/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/styles/colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/fonts/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/fonts/fonts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/sizes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/sizes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/sizes/sizes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/sizes/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +30,8 @@
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="SCSS File" />
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -106,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
-      <workItem from="1731611799216" duration="16635000" />
+      <workItem from="1731611799216" duration="24283000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -212,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731625206977</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="create element Image with storybook but fallback dont work in storybook">
+      <option name="closed" value="true" />
+      <created>1731856594522</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731856594522</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

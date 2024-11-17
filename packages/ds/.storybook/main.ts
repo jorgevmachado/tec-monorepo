@@ -1,4 +1,7 @@
 import type { StorybookConfig } from "@storybook/react-webpack5";
+import {TsconfigPathsPlugin} from "tsconfig-paths-webpack-plugin";
+
+const brand = process.env.BRAND || 'geek';
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -14,13 +17,14 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
-    "@storybook/addon-interactions",
+    "@storybook/addon-interactions"
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
   },
   webpackFinal: async (config) => {
+    config.resolve.plugins = [new TsconfigPathsPlugin()];
     config.module.rules.push({
       test: /\.scss$/,
       use: [
@@ -30,8 +34,8 @@ const config: StorybookConfig = {
           loader: 'sass-loader',
           options: {
             additionalData: `
-              @import "~@tec/tokens/dist/geek/css/_variables.css";
-              @import "~@tec/tokens/dist/geek/scss/_variables.scss";
+              @import "~@tec/tokens/dist/${brand}/css/_variables.css";
+              @import "~@tec/tokens/dist/${brand}/scss/_variables.scss";
             `,
             implementation: require('sass'),
           }
