@@ -1,14 +1,61 @@
 import React from 'react';
 
-import type { TColors, TIcon } from '../../utils';
+import type { TColors } from '../colors';
 
-import { CiCalendar, CiHeart, CiPhone, CiUser, CiWarning } from 'react-icons/ci';
+import { CiCalendar, CiCamera, CiHeart, CiPhone, CiUser, CiWarning } from 'react-icons/ci';
 import { FaCheck, FaFacebook, FaGoogle, FaHamburger, FaReact, FaRegLightbulb } from 'react-icons/fa';
 import { IoClose, IoDocumentTextOutline } from 'react-icons/io5';
 import { MdOutlineInfo, MdOutlineKeyboardArrowRight, MdOutlineSpaceDashboard } from 'react-icons/md';
 import { GiConfirmed } from 'react-icons/gi';
 import { IoMdExit } from 'react-icons/io';
 import { VscError } from 'react-icons/vsc';
+
+export type TIcon =
+    'user'|
+    'lamp'|
+    'info'|
+    'like'|
+    'exit'|
+    'check'|
+    'close'|
+    'error'|
+    'react'|
+    'phone'|
+    'google'|
+    'camera'|
+    'confirm'|
+    'warning'|
+    'facebook'|
+    'calendar'|
+    'document'|
+    'dashboard'|
+    'hamburger'|
+    'arrow-right';
+
+export const OIcon: Array<TIcon> = [
+    'user',
+    'lamp',
+    'like',
+    'exit',
+    'check',
+    'close',
+    'error',
+    'react',
+    'phone',
+    'google',
+    'camera',
+    'confirm',
+    'warning',
+    'facebook',
+    'calendar',
+    'document',
+    'hamburger',
+    'arrow-right'
+];
+
+export type TIconPosition = 'left' | 'right';
+
+export const OIconPosition: Array<TIconPosition> = ['left' , 'right'];
 
 export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
 
@@ -33,6 +80,8 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <CiPhone size={size || '1em'} color={color}/>;
         case 'google':
             return <FaGoogle size={size || '1em'} color={color}/>;
+        case 'camera':
+            return <CiCamera size={size || '1em'} color={color}/>;            
         case 'confirm':
             return <GiConfirmed size={size || '1em'} color={color}/>;
         case 'warning':

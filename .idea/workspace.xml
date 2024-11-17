@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Icon with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/sizes/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/sizes/sizes.ts" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="create element Image with storybook but fallback dont work in storybook">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/Image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/Image.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/Image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/image/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/icon/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/icon/options.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/icons.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731519959005</updated>
       <workItem from="1731519960175" duration="35250000" />
-      <workItem from="1731611799216" duration="13336000" />
+      <workItem from="1731611799216" duration="16635000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -200,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731621261631</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="create element Avatar with storybook">
+      <option name="closed" value="true" />
+      <created>1731625206977</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731625206977</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +233,8 @@
     <MESSAGE value="finish tokens with style-dictionary" />
     <MESSAGE value="create element Text with storybook" />
     <MESSAGE value="create element Icon with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="create element Icon with storybook" />
+    <MESSAGE value="create element Avatar with storybook" />
+    <MESSAGE value="create element Image with storybook but fallback dont work in storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="create element Image with storybook but fallback dont work in storybook" />
   </component>
 </project>
