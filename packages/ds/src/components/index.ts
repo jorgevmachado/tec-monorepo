@@ -4,3 +4,5 @@ export * from './button';
 export * from './modal';
 export * from './alert';
 export * from './dropdown';
+export * from './input';
+export * from './label';

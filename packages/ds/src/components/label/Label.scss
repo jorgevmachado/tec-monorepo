@@ -1,0 +1,11 @@
+@import "../../styles/main";
+
+.label {
+  margin:  0 0 0.25rem 0;
+
+  &__text {
+    color: var(--colors-neutral-120);
+    font-size: var(--dimensions-regular);
+    line-height: var(--dimensions-regular);
+  }
+}
