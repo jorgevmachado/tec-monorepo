@@ -24,6 +24,7 @@ module.exports = {
         }],
         'keyword-spacing': ['error', { 'before': true, 'after': true }],
         'object-curly-spacing': ['error', 'always'],
+        'no-extra-boolean-cast': 'off',
         'space-before-function-paren': ['error', {
             'named': 'never',
             'anonymous': 'always',

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { TContext } from '../../utils';
+
 type InputPropsItem = Pick<
     React.HTMLProps<Element>,
     'onBlur' |
@@ -25,7 +27,7 @@ export interface InputProps extends InputPropsItem, HostProps {
     autoFocus?: boolean;
     dataCyName?: string;
     helperText?: React.ReactNode;
-    iconContext?: 'primary' | 'secondary' | 'neutral';
+    iconContext?: TContext;
     floatingLabel?: boolean;
     invalidMessage?: string;
     hasFloatingSlots?: boolean;

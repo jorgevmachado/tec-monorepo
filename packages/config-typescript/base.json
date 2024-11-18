@@ -1,19 +1,19 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "strict": true,
     "composite": false,
     "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "inlineSources": false,
-    "isolatedModules": true,
-    "moduleResolution": "Bundler",
+    "declarationMap": true,
     "noUnusedLocals": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
-    "skipLibCheck": true,
-    "strict": true
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": ["node_modules"]
 }
