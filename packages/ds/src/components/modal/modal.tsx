@@ -69,6 +69,7 @@ export default function Modal({
             <div {...props} className={joinClass(['modal', 'modal__fade-in', `modal__spacing--${spacing}`])}>
                 <Icon
                     icon="close"
+                    size={35}
                     onClick={onCloseFunction}
                     tabIndex={0}
                     className="modal__close"
