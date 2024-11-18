@@ -18,6 +18,7 @@ export default function Button({
     context = 'neutral',
     children,
     disabled,
+    iconSize = '1em',
     appearance = 'standard',
     iconPosition = 'left',
     iconClassName,
@@ -71,7 +72,7 @@ export default function Button({
                 !isAppearanceIconButton 
                     ? (
                         <div className="button__content">
-                            { icon && iconPosition === 'left' && ( <Icon icon={icon} className={iconClassNameList}/> )}
+                            { icon && iconPosition === 'left' && ( <Icon icon={icon} size={iconSize} className={iconClassNameList}/> )}
                             <>
                                 <div>{children}</div>
                                 { notificationCounter && (
@@ -84,7 +85,7 @@ export default function Button({
                                     </div>
                                 ) }
                             </>
-                            { icon && iconPosition === 'right' && ( <Icon icon={icon} className={iconClassNameList}/> )}
+                            { icon && iconPosition === 'right' && ( <Icon icon={icon} size={iconSize} className={iconClassNameList}/> )}
                         </div>
                     )
                     : ( <Icon icon={icon || 'react'} className={iconClassNameList}/> )

@@ -27,6 +27,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     context?: TContext;
     children?: React.ReactNode;
     disabled?: boolean;
+    iconSize?: string | number;
     appearance?: TAppearance;
     iconPosition?: TIconPosition;
     iconClassName?: string;

@@ -3,7 +3,7 @@ import React from 'react';
 import { CiCalendar, CiCamera, CiHeart, CiPhone, CiUser, CiWarning } from 'react-icons/ci';
 import { FaCheck, FaFacebook, FaGoogle, FaHamburger, FaReact, FaRegLightbulb } from 'react-icons/fa';
 import { IoClose, IoDocumentTextOutline } from 'react-icons/io5';
-import { MdOutlineInfo, MdOutlineKeyboardArrowRight, MdOutlineSpaceDashboard } from 'react-icons/md';
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp, MdOutlineInfo, MdOutlineKeyboardArrowRight, MdOutlineSpaceDashboard } from 'react-icons/md';
 import { GiConfirmed } from 'react-icons/gi';
 import { IoMdExit } from 'react-icons/io';
 import { VscError } from 'react-icons/vsc';
@@ -44,8 +44,10 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <GiConfirmed size={size || '1em'} color={color}/>;
         case 'warning':
             return <CiWarning size={size || '1em'} color={color}/>;
+        case 'arrow-up':
+            return <MdOutlineArrowDropUp size={size || '1em'} color={color}/>;
         case 'facebook':
-            return <FaFacebook size={size || '1em'} color={color}/>;
+            return <FaFacebook size={size || '1em'} color={color}/>;    
         case 'calendar':
             return <CiCalendar size={size || '1em'} color={color}/>;
         case 'document':
@@ -54,6 +56,8 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <MdOutlineSpaceDashboard size={size || '1em'} color={color}/>;
         case 'hamburger':
             return <FaHamburger size={size || '1em'} color={color}/>;
+        case 'arrow-down':
+            return <MdOutlineArrowDropDown size={size || '1em'} color={color}/>;
         case 'arrow-right':
             return <MdOutlineKeyboardArrowRight size={size || '1em'} color={color}/>;
         case 'react':

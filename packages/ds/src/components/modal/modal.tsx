@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 
-import {TContext, joinClass, TColors} from '../../utils';
+import { TColors, TContext, joinClass } from '../../utils';
 
 import './Modal.scss';
 
 import Icon from '../../elements/icon';
 import Text from '../../elements/text';
 
-export interface ModalProps {
+export interface ModalProps  extends React.HTMLAttributes<HTMLDivElement> {
     title?: string;
     isOpen: boolean;
     spacing?: 'md' | 'lg';

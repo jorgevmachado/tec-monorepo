@@ -14,11 +14,13 @@ export type TIcon =
     'confirm'|
     'success'|
     'warning'|
+    'arrow-up'|
     'facebook'|
     'calendar'|
     'document'|
     'dashboard'|
     'hamburger'|
+    'arrow-down'|
     'arrow-right';
 
 export const OIcon: Array<TIcon> = [
@@ -36,10 +38,12 @@ export const OIcon: Array<TIcon> = [
     'confirm',
     'success',
     'warning',
+    'arrow-up',
     'facebook',
     'calendar',
     'document',
     'hamburger',
+    'arrow-down',
     'arrow-right'
 ];
 
