@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement modal component with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/input/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/use-generate-component-id/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/utils/use-generate-component-id/useGenerateComponentId.ts" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement label component with storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +104,7 @@
       <workItem from="1731519960175" duration="35250000" />
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
-      <workItem from="1731933027062" duration="1308000" />
+      <workItem from="1731933027062" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -326,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731897463201</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="implement label component with storybook">
+      <option name="closed" value="true" />
+      <created>1731934382549</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731934382549</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +365,7 @@
     <MESSAGE value="implement double prompt in turbo gen ds" />
     <MESSAGE value="fix modal colors" />
     <MESSAGE value="implement modal component with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement modal component with storybook" />
+    <MESSAGE value="implement label component with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement label component with storybook" />
   </component>
 </project>
