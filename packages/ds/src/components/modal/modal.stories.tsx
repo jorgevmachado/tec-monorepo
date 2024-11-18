@@ -17,6 +17,7 @@ const meta = {
         onClose: undefined,
         children: 'body modal',
         closeOnEsc: true,
+        backDropColor: 'neutral-100',
         closeOnOutsideClick: true,
         removeBackgroundScroll: false,
     },
@@ -34,7 +35,8 @@ const TemplateModal = (args: ModalProps) => {
 
     return (
         <>
-            <Button onClick={() => setIsOpen(true)}>Abrir modal</Button>
+            {/*@ts-ignore*/}
+            <Button onClick={() => setIsOpen(true)} context={args.context}>Abrir modal</Button>
             <Modal {...args} isOpen={isOpen} onClose={() => setIsOpen(false)} children={args.children}/>
         </>
     );
@@ -42,6 +44,54 @@ const TemplateModal = (args: ModalProps) => {
 
 export const Default: Story = {
     args: { },
+    render: (args) => <TemplateModal {...args} children={args.children}/>
+};
+
+
+export const SecondaryWithBackDropColor: Story = {
+    args: {
+        context: 'secondary',
+        backDropColor: 'secondary-100'
+    },
+    render: (args) => <TemplateModal {...args} children={args.children}/>
+};
+
+export const InfoWithBackDropColor: Story = {
+    args: {
+        context: 'info',
+        backDropColor: 'info-100'
+    },
+    render: (args) => <TemplateModal {...args} children={args.children}/>
+};
+
+export const ErrorWithBackDropColor: Story = {
+    args: {
+        context: 'error',
+        backDropColor: 'error-100'
+    },
+    render: (args) => <TemplateModal {...args} children={args.children}/>
+};
+
+export const SuccessWithBackDropColor: Story = {
+    args: {
+        context: 'success',
+        backDropColor: 'success-100'
+    },
+    render: (args) => <TemplateModal {...args} children={args.children}/>
+};
+
+export const AttentionWithBackDropColor: Story = {
+    args: {
+        context: 'attention',
+        backDropColor: 'attention-100'
+    },
+    render: (args) => <TemplateModal {...args} children={args.children}/>
+};
+
+export const Neutral: Story = {
+    args: {
+        context: 'neutral'
+    },
     render: (args) => <TemplateModal {...args} children={args.children}/>
 };
 

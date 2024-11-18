@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { TContext, joinClass } from '../../utils';
+import {TContext, joinClass, TColors} from '../../utils';
 
 import './Modal.scss';
 
@@ -15,6 +15,7 @@ export interface ModalProps {
     onClose(): void;
     children: React.ReactNode;
     closeOnEsc?: boolean;
+    backDropColor?: TColors;
     closeOnOutsideClick?: boolean;
     removeBackgroundScroll?: boolean;
 }
@@ -27,6 +28,7 @@ export default function Modal({
     onClose,
     children,
     closeOnEsc,
+    backDropColor = 'neutral-100',
     closeOnOutsideClick,
     removeBackgroundScroll,
     ...props
@@ -59,14 +61,20 @@ export default function Modal({
             return () => window.removeEventListener('keydown', keyDownHandler);
         }
     }, [closeOnEsc]);
-    
-    
+
+    const classNameList = joinClass([
+        'modal',
+        'modal__fade-in',
+        `modal__spacing--${spacing}`,
+        `modal__context--${context}`,
+    ]);
+
     return  isOpen ? (
         <>
             <div
-                className="modal__backdrop modal__fade-in"
+                className={joinClass(['modal__backdrop', 'modal__fade-in', `ds-bg-${backDropColor}`])}
                 onClick={() => closeOnOutsideClick && onCloseFunction}/>
-            <div {...props} className={joinClass(['modal', 'modal__fade-in', `modal__spacing--${spacing}`])}>
+            <div {...props} className={classNameList}>
                 <Icon
                     icon="close"
                     size={35}

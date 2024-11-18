@@ -30,7 +30,6 @@
   &__close {
     top: var(--size-medium);
     right: var(--size-medium);
-    color: var(--color-primary-100);
     position: absolute;
     user-select: none;
 
@@ -47,7 +46,6 @@
     z-index: 9;
     opacity: 0.64;
     position: fixed;
-    background-color: var(--color-neutral-100);
   }
 
   &__fade-in {
@@ -63,6 +61,65 @@
     }
     &--lg {
       padding: var(--size-huge) var(--size-regular);
+    }
+  }
+
+  &__context {
+    &--info {
+      .modal__close {
+        color: var(--color-info-80);
+        &:hover {
+          color: var(--color-info-70)
+        }
+      }
+    }
+    &--error {
+      .modal__close {
+        color: var(--color-error-80);
+        &:hover {
+          color: var(--color-error-70)
+        }
+      }
+    }
+    &--neutral {
+      .modal__close {
+        color: var(--color-neutral-80);
+        &:hover {
+          color: var(--color-neutral-90)
+        }
+      }
+    }
+    &--success {
+      .modal__close {
+        color: var(--color-success-80);
+        &:hover {
+          color: var(--color-success-70)
+        }
+      }
+    }
+    &--primary {
+      .modal__close {
+        color: var(--color-primary-80);
+        &:hover {
+          color: var(--color-primary-60)
+        }
+      }
+    }
+    &--secondary {
+      .modal__close {
+        color: var(--color-secondary-80);
+        &:hover {
+          color: var(--color-secondary-60)
+        }
+      }
+    }
+    &--attention {
+      .modal__close {
+        color: var(--color-attention-80);
+        &:hover {
+          color: var(--color-attention-60)
+        }
+      }
     }
   }
 
