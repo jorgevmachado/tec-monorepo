@@ -6,7 +6,6 @@ import Text from '../../elements/text';
 
 import './Avatar.scss';
 
-// 'xlarge' | 'large' | 'medium' | 'small'
 interface AvatarProps {
     readonly src?: string;
     readonly size?: TSimplySIze;
