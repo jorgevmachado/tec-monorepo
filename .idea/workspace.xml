@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix components">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/alert/interface.ts" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement component Alert with storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731879535949</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="implement component Alert with storybook">
+      <option name="closed" value="true" />
+      <created>1731886350882</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1731886350882</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +305,7 @@
     <MESSAGE value="fix element link and button with storybook" />
     <MESSAGE value="implement element spinner with storybook" />
     <MESSAGE value="fix components" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix components" />
+    <MESSAGE value="implement component Alert with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement component Alert with storybook" />
   </component>
 </project>
