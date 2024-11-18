@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement Feedback component with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/input/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/input/inputItem/InputItem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/input/inputItem/InputItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/input/inputItem/index.ts" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement Input component with storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/config-eslint/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/config-eslint/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/config-typescript/base.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/config-typescript/base.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/input/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/input/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +104,7 @@
       <workItem from="1731519960175" duration="35250000" />
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
-      <workItem from="1731933027062" duration="6589000" />
+      <workItem from="1731933027062" duration="10025000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -344,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731934902370</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="implement Input component with storybook">
+      <option name="closed" value="true" />
+      <created>1731939701542</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1731939701542</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +378,7 @@
     <MESSAGE value="implement modal component with storybook" />
     <MESSAGE value="implement label component with storybook" />
     <MESSAGE value="implement Feedback component with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement Feedback component with storybook" />
+    <MESSAGE value="implement Input component with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement Input component with storybook" />
   </component>
 </project>
