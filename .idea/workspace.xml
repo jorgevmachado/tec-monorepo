@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement component Modal with storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/turbo/generators/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/storybook.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/turbo/generators/templates/storybook.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731889532040</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="implement component Modal with storybook">
+      <option name="closed" value="true" />
+      <created>1731889692900</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1731889692900</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

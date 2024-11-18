@@ -22,8 +22,7 @@
   "scripts": {
     "dev": "echo 'Add dev script here'",
     "build": "rimraf dist && tsc && tsc-alias -p tsconfig.aliases.json",
-    "generate:element": "turbo gen ds-element",
-    "generate:component": "turbo gen ds-component",
+    "gen": "turbo gen ds",
     "lint": "eslint . --max-warnings 0",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"

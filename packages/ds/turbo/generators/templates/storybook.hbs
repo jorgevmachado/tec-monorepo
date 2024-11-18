@@ -1,14 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import {{ pascalCase name }} from './';
+import {{ pascalCase name }} from './{{ kebabCase name }}';
 
 const meta = {
     args: {
         children: 'Hello, World!',
     },
-    title: 'Atoms/{{ pascalCase name }}',
+    title: '{{ pascalCase type }}/{{ pascalCase name }}',
     component: {{ pascalCase name }},
 } satisfies Meta<typeof {{ pascalCase name }}>;
 
