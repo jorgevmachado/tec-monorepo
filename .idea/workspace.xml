@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement Input component with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/checkbox/Checkbox.scss" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement Checkbox component with storybook">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/line-overflow.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/use-generate-component-id/useGenerateComponentId.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/use-generate-component-id/useGenerateComponentId.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +21,9 @@
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
-        <option value="SCSS File" />
         <option value="TypeScript File" />
         <option value="tsconfig.json" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -350,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731939701542</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="implement Checkbox component with storybook">
+      <option name="closed" value="true" />
+      <created>1732025305677</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1732025305677</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +364,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="BIG BANG" />
     <MESSAGE value="fix name" />
     <MESSAGE value="node version" />
     <MESSAGE value="create workspace services" />
@@ -383,6 +388,7 @@
     <MESSAGE value="implement label component with storybook" />
     <MESSAGE value="implement Feedback component with storybook" />
     <MESSAGE value="implement Input component with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement Input component with storybook" />
+    <MESSAGE value="implement Checkbox component with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement Checkbox component with storybook" />
   </component>
 </project>
