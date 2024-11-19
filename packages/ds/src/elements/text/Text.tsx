@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { isObject } from '@tec/services';
+
 import type { FormatTextProps, TextProps } from './interface';
 import { formatText, isReactNode } from './config';
 import joinClass from '../../utils/join-class/joinClass';
@@ -34,7 +36,9 @@ export default function Text({
 
     const CustomTag = tag as React.ElementType;
 
-    const formattedText = isReactNode(children) ? undefined : formatText(children as string);
+    const formattedText = (isReactNode(children) || isObject(children))
+        ? undefined
+        : formatText(children as string);
 
     return (
         <CustomTag

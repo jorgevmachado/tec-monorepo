@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement Checkbox component with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/styles/line-overflow.scss" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement Collapse component with storybook">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/step-bar/interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/text/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/text/Text.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/services/src/object/object.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/services/src/object/object.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/services/src/object/object.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/services/src/object/object.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +22,9 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="tsconfig.json" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
-        <option value="tsconfig.json" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -53,32 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/utils/use-generate-component-id&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/components/step-bar",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/ds/src/components/step-bar" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/use-generate-component-id" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/use-outside-click" />
       <recent name="$PROJECT_DIR$/packages/ds/src/styles" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/join-class" />
-      <recent name="$PROJECT_DIR$/packages/ds/.storybook" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/ds/src/components" />
@@ -356,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732025305677</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="implement Collapse component with storybook">
+      <option name="closed" value="true" />
+      <created>1732028241345</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1732028241345</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +374,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="fix name" />
     <MESSAGE value="node version" />
     <MESSAGE value="create workspace services" />
     <MESSAGE value="create workspace business (wip)" />
@@ -389,6 +398,7 @@
     <MESSAGE value="implement Feedback component with storybook" />
     <MESSAGE value="implement Input component with storybook" />
     <MESSAGE value="implement Checkbox component with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement Checkbox component with storybook" />
+    <MESSAGE value="implement Collapse component with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement Collapse component with storybook" />
   </component>
 </project>

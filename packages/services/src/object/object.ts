@@ -4,3 +4,7 @@ export function serialize(data: any) {
     return new URLSearchParams(data).toString();
   }
 }
+
+export function isObject(value: any) {
+  return value instanceof Object;
+}
