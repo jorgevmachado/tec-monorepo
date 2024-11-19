@@ -1,9 +1,12 @@
 import { useMemo } from 'react';
 
-// TODO retornar para encontrar uma forma melhor de gerar
+import { uuid } from '@tec/services';
+
 export default function useGenerateComponentId(text: string): string {
+    const uuidGenerate = uuid();
+    const random = (Math.random() * 10).toFixed(1);
     return useMemo(
-        () => text.toLowerCase().replace(/\s/g, '_'),
+        () => `${text}-${random}-${uuidGenerate}`,
         [text]
     );
 }
