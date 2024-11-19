@@ -10,3 +10,4 @@ export * from './feedback';
 export * from './radio';
 export * from './checkbox';
 export * from './collapse';
+export * from './step-bar';
