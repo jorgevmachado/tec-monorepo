@@ -54,15 +54,15 @@
 
   &__open {
     .accordion__content {
-      padding: 0 16px 16px 16px;
       height: 100%;
       opacity: 1;
+      padding: 0 var(--dimensions-regular) var(--dimensions-regular) var(--dimensions-regular);
       transition: opacity 0.5s linear;
       pointer-events: unset;
     }
     .accordion__button--arrow-icon {
-      transition: transform 0.2s ease-in;
       transform: rotate(180deg);
+      transition: transform 0.2s ease-in;
     }
   }
 
@@ -82,14 +82,13 @@
   }
 
   &__button {
-    border: none;
-    margin: 0;
-    background: transparent;
     width: 100%;
-
+    margin: 0;
+    border: none;
     display: flex;
+    padding: var(--dimensions-regular);
+    background: transparent;
     justify-content: space-between;
-    padding: 16px;
 
     &:hover {
       cursor: pointer;
