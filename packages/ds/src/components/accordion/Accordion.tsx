@@ -63,7 +63,7 @@ export default function Accordion({
                 { childrenTitle ? (
                     <div className="accordion__button--title">{childrenTitle}</div>
                 ) : (
-                    <Text variant="small" weight="bold">{title}</Text>
+                    <Text variant="regular" weight="bold">{title}</Text>
                 ) }
                 
                 <Icon 

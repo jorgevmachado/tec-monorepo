@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement accordion component with storybook">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/inclined-assets.tsx" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement tag component with storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -387,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732119814988</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="implement tag component with storybook">
+      <option name="closed" value="true" />
+      <created>1732127232245</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1732127232245</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +403,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="finish business without unit test" />
     <MESSAGE value="finish tokens with style-dictionary" />
     <MESSAGE value="create element Text with storybook" />
     <MESSAGE value="create element Icon with storybook" />
@@ -420,6 +427,7 @@
     <MESSAGE value="fix element Text" />
     <MESSAGE value="implement rating component with storybook and implement tooltip element with storybook" />
     <MESSAGE value="implement accordion component with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement accordion component with storybook" />
+    <MESSAGE value="implement tag component with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement tag component with storybook" />
   </component>
 </project>

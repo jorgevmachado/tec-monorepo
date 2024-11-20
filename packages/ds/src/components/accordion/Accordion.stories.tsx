@@ -4,6 +4,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import Text from '../../elements/text';
 
+import Tag from '../tag';
+
 import Accordion from './Accordion';
 import {OContext} from "../../utils";
 
@@ -68,7 +70,7 @@ export const WithChildrenTitle: Story = {
             >
                 <div style={{ width: "100%", display: "flex", gap: "12px" }}>
                     <Text>client name</Text>
-                    {/*<LTagCard context={"primary"}>Tag</LTagCard>*/}
+                    <Tag context={"primary"}>Tag</Tag>
                 </div>
                 <Text>Date</Text>
             </div>
