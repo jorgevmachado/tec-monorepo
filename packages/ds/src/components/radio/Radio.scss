@@ -27,13 +27,11 @@
 .radio {
   cursor: pointer;
   display: flex;
-  padding: 12px;
+  padding: var(--dimensions-x-small);
   align-items: center;
-  border-radius: 12px;
-  margin-bottom: 0.25rem;
+  border-radius: var(--dimensions-x-small);
+  margin-bottom: var(--dimensions-xx-tiny);
   background-color: var(--color-white);
-
-  &__error {}
 
   &__label {
     cursor: pointer;
@@ -44,11 +42,11 @@
   }
 
   &__wrapper {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 0 12px 0 0;
+    width: var(--dimensions-medium);
+    height: var(--dimensions-medium);
+    margin: 0 var(--dimensions-x-small) 0 0;
     position: relative;
-    min-width: 1.5rem;
+    min-width: var(--dimensions-medium);
     &--input {
       width: 100%;
       height: 100%;
@@ -83,10 +81,6 @@
     }
   }
 
-  &__variant {
-    &--regular {}
-    &--large {}
-  }
 
   &__context {
 
@@ -118,7 +112,7 @@
   &__disabled {
     cursor: default;
     pointer-events: none;
-    background-color: #fff;
+    background-color: var(--color-white);
     .text {
       color: var(--color-neutral-70);
     }
@@ -156,23 +150,23 @@
  */
 .radio__variant--regular {
   .radio__wrapper {
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
+    width: var(--dimensions-xx-regular);
+    height: var(--dimensions-xx-regular);
+    min-width: var(--dimensions-xx-regular);
   }
 }
 
 .radio__variant--large {
   .radio__wrapper {
-    width: 2rem;
-    height: 2rem;
-    min-width: 2rem;
+    width: var(--dimensions-large);
+    height: var(--dimensions-large);
+    min-width: var(--dimensions-large);
     &--icon {
-      width: 1.25rem;
-      height:  1.25rem;
+      width: var(--dimensions-xx-regular);
+      height:  var(--dimensions-xx-regular);
       svg {
-        width: 1.25rem;
-        height:  1.25rem;
+        width: var(--dimensions-xx-regular);
+        height:  var(--dimensions-xx-regular);
       }
     }
   }
