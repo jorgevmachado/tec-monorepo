@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var collapse">
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/dropdown/Dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/dropdown/Dropdown.scss" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var Feedback.scss">
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/input/Input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/input/Input.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
       <workItem from="1731933027062" duration="10025000" />
-      <workItem from="1732130449523" duration="2898000" />
+      <workItem from="1732130449523" duration="3226000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -475,7 +475,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732133250536</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="fix scss var Dropdown.scss">
+      <option name="closed" value="true" />
+      <created>1732133438516</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1732133438516</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fix scss var Feedback.scss">
+      <option name="closed" value="true" />
+      <created>1732133493065</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1732133493065</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,8 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="implement element spinner with storybook" />
-    <MESSAGE value="fix components" />
     <MESSAGE value="implement component Alert with storybook" />
     <MESSAGE value="implement component Modal with storybook" />
     <MESSAGE value="implement double prompt in turbo gen ds" />
@@ -508,7 +522,9 @@
     <MESSAGE value="fix scss var button" />
     <MESSAGE value="fix scss var checkbox" />
     <MESSAGE value="fix scss var collapse" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix scss var collapse" />
+    <MESSAGE value="fix scss var Dropdown.scss" />
+    <MESSAGE value="fix scss var Feedback.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix scss var Feedback.scss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
