@@ -1,0 +1,242 @@
+@import "../../styles/main";
+
+@mixin context($color) {
+  .tooltip__container--body {
+    &-caret {
+      background: $color;
+      &:after {
+        background: $color;
+      }
+    }
+    &-content {
+      background-color: $color;
+      color: var(--color-white);
+    }
+  }
+}
+
+.tooltip {
+  &__context {
+    &--info {
+      @include context(var(--color-info-90));
+    }
+    &--error {
+      @include context(var(--color-error-90));
+    }
+    &--neutral {
+      @include context( var(--color-neutral-90) );
+    }
+    &--success {
+      @include context(var(--color-success-90));
+    }
+    &--primary {
+      @include context(var(--color-primary-90));
+    }
+    &--secondary {
+      @include context(var(--color-secondary-90));
+    }
+    &--attention {
+      @include context(var(--color-attention-90));
+    }
+  }
+  &__container {
+    position: relative;
+    display: inline-block;
+
+    @include focus;
+
+    &:focus .tooltip__container--body,
+    &:hover .tooltip__container--body {
+      display: block;
+    }
+    &--body {
+      outline: none;
+      display: none;
+      z-index: 999;
+      position: absolute;
+      width: max-content;
+
+      &-caret {
+        width: 0.5rem;
+        height: 0.5rem;
+        //background: #3c4453;
+        display: block;
+        border-radius: 100%;
+
+
+        &:after {
+          content: "";
+          //background: #3c4453;
+          display: block;
+          position: relative;
+        }
+      }
+
+      &-content {
+        border-radius: 4px;
+        padding: 8px;
+        //background-color: #3c4453;
+        //color: #fff;
+        font-size: 14px;
+        max-width: 400px;
+        &__title {
+          font-weight: 500;
+        }
+      }
+    }
+    &--align {
+      &-top {
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 18px;
+
+        .tooltip__container--body-caret {
+          position: absolute;
+          bottom: -16px;
+          left: calc(50% - 4px);
+
+          &:after {
+            height: 8px;
+            width: 2px;
+            bottom: 8px;
+            left: 3px;
+          }
+        }
+      }
+
+      &-left {
+        right: 100%;
+        margin-right: 18px;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        .tooltip__container--body-caret {
+          margin-right: -16px;
+          position: absolute;
+          top: calc(50% - 4px);
+          right: 0;
+
+          &:after {
+            height: 2px;
+            width: 8px;
+            bottom: -3px;
+            right: 8px;
+          }
+        }
+      }
+
+      &-right {
+        left: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-left: 18px;
+
+        .tooltip__container--body-caret {
+          margin-left: -16px;
+          position: absolute;
+          top: calc(50% - 4px);
+
+          &:after {
+            height: 2px;
+            width: 8px;
+            bottom: -3px;
+            left: 8px;
+          }
+        }
+      }
+
+      &-bottom {
+        margin-top: 18px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        .tooltip__container--body-caret {
+          position: absolute;
+          left: calc(50% - 4px);
+          top: -16px;
+
+          &:after {
+            height: 8px;
+            width: 2px;
+            bottom: -8px;
+            left: 3px;
+          }
+        }
+      }
+
+      &-top-left {
+        bottom: 100%;
+        right: 50%;
+        margin-bottom: 18px;
+
+        .tooltip__container--body-caret {
+          position: absolute;
+          bottom: -16px;
+          right: 0;
+
+          &:after {
+            height: 8px;
+            width: 2px;
+            bottom: 8px;
+            left: 3px;
+          }
+        }
+      }
+
+      &-top-right {
+        bottom: 100%;
+        left: 50%;
+        margin-bottom: 18px;
+
+        .tooltip__container--body-caret {
+          position: absolute;
+          bottom: -16px;
+          left: 0;
+
+          &:after {
+            height: 8px;
+            width: 2px;
+            bottom: 8px;
+            left: 3px;
+          }
+        }
+      }
+
+      &-bottom-left {
+        margin-top: 18px;
+        right: calc(50% - 4px);
+
+        .tooltip__container--body-caret {
+          position: absolute;
+          right: 0;
+          top: -16px;
+
+          &:after {
+            height: 8px;
+            width: 2px;
+            bottom: -8px;
+            left: 3px;
+          }
+        }
+      }
+
+      &-bottom-right {
+        margin-top: 18px;
+        left: 50%;
+
+        .tooltip__container--body-caret {
+          position: absolute;
+          left: 0;
+          top: -16px;
+
+          &:after {
+            height: 8px;
+            width: 2px;
+            bottom: -8px;
+            left: 3px;
+          }
+        }
+      }
+    }
+  }
+}

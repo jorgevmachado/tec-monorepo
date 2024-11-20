@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix element Text">
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/step-bar/StepBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/step-bar/interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +28,8 @@
         <option value="CSS File" />
         <option value="tsconfig.json" />
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -53,25 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/components/step-bar",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/components/step-bar&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/ds/src/components/step-bar" />

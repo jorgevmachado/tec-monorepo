@@ -5,7 +5,7 @@ import { FaCheck, FaFacebook, FaGoogle, FaHamburger, FaReact, FaRegLightbulb } f
 import { IoClose, IoDocumentTextOutline } from 'react-icons/io5';
 import { MdOutlineArrowDropDown, MdOutlineArrowDropUp, MdOutlineInfo, MdOutlineKeyboardArrowRight, MdOutlineSpaceDashboard } from 'react-icons/md';
 import { GiConfirmed } from 'react-icons/gi';
-import { IoMdExit } from 'react-icons/io';
+import {IoIosStar, IoIosStarHalf, IoIosStarOutline, IoMdExit} from 'react-icons/io';
 import { VscError } from 'react-icons/vsc';
 
 import type { TColors } from '../colors';
@@ -21,6 +21,8 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <CiUser size={size || '1em'} color={color}/>;
         case 'lamp':
             return <FaRegLightbulb size={size || '1em'} color={color}/>;
+        case 'star':
+            return <IoIosStarOutline size={size || '1em'} color={color}/>;
         case 'info':
             return <MdOutlineInfo size={size || '1em'} color={color}/>;
         case 'like':
@@ -52,6 +54,8 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <CiCalendar size={size || '1em'} color={color}/>;
         case 'document':
             return <IoDocumentTextOutline size={size || '1em'} color={color}/>;
+        case 'star-half':
+            return <IoIosStarHalf size={size || '1em'} color={color}/>;
         case 'dashboard':
             return <MdOutlineSpaceDashboard size={size || '1em'} color={color}/>;
         case 'hamburger':
@@ -60,6 +64,8 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <MdOutlineArrowDropDown size={size || '1em'} color={color}/>;
         case 'arrow-right':
             return <MdOutlineKeyboardArrowRight size={size || '1em'} color={color}/>;
+        case 'star-filled':
+            return <IoIosStar size={size || '1em'} color={color}/>;
         case 'react':
         default:
             return <FaReact size={size || '1em'} color={color} />;

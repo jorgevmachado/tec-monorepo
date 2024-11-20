@@ -1,0 +1,30 @@
+@import "../../styles/main";
+
+.rating {
+  &__context {
+    &--info {}
+    &--error {}
+    &--neutral {}
+    &--success {}
+    &--primary {}
+    &--secondary {}
+    &--attention {}
+  }
+  &__rate {
+    color: var(--color-neutral-80);
+    margin-left: 4px;
+  }
+  &__informations {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    &--count {
+      font-size: var(--size-small);
+      font-weight: var(--font-weight-bold);
+    }
+    &--icon {
+      margin-right: 8px;
+    }
+  }
+}
