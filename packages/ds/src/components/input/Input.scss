@@ -26,8 +26,8 @@
       border-bottom-left-radius: 0;
     }
     button {
-      padding-top: .75rem;
-      padding-bottom: .75rem;
+      padding-top: var(--dimensions-x-small);
+      padding-bottom: var(--dimensions-x-small);
     }
   }
 
@@ -93,14 +93,14 @@
 
     .input__label--shrink & {
       cursor: pointer;
-      margin: 0 0.875rem;
+      margin: 0 var(--dimensions-small);
       transform: translateY(calc(-50% - 1rem)) scale(#{0.75});
       background: linear-gradient( to bottom, transparent calc(50% - 3px), #{var(--color-white)} 0);
     }
 
     .input__label--floating & {
       top: 1rem;
-      margin: 0 0.875rem;
+      margin: 0 var(--dimensions-small);
       display: flex;
       z-index: 10;
       position: absolute;
@@ -109,7 +109,7 @@
       align-items: center;
       transform-origin: left center;
       &--icon-left {
-        transform: translateX(3rem);
+        transform: translateX(var(--dimensions-big));
         margin-left: 0;
       }
     }
@@ -136,10 +136,10 @@
   &__item {
     color: var(--color-neutral-100);
     width: 100%;
-    padding: .75rem 1rem;
+    padding: var(--dimensions-x-small) 1rem;
     border: 1px solid var(--color-neutral-60);
     text-align: left;
-    border-radius: 12px;
+    border-radius: var(--border-radius-large);
     background-color: transparent;
 
     &::placeholder {
