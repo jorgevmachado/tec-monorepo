@@ -29,7 +29,7 @@
 }
 
 .step-bar {
-  gap:  16px;
+  gap:  var(--dimensions-regular);
   display: flex;
 
   .text {
@@ -46,13 +46,13 @@
     &:not(.step-bar__wrapper--vertical) {
       .step-bar__wrapper--text {
         display: flex;
-        margin-bottom: 0.25rem;
+        margin-bottom: var(--dimensions-xx-tiny);
         justify-content: space-between;
       }
     }
     &--vertical {
       .step-bar__wrapper--text {
-        margin-bottom:  16px;
+        margin-bottom:  var(--dimensions-regular);
       }
     }
   }
@@ -68,7 +68,7 @@
 
     .step-bar__item {
       position: relative;
-      padding-bottom:  16px;
+      padding-bottom:  var(--dimensions-regular);
       .step-bar__item--header {
         align-items: start;
       }
@@ -82,8 +82,8 @@
         background-color: #cfd4dd;
         display: block;
         position: absolute;
-        top: 40px;
-        left: 18px;
+        top: var(--size-fixed-xx-large);
+        left: var(--dimensions-x-regular);
       }
       &:last-child {
         &:after {
@@ -102,24 +102,24 @@
     &.step-bar__vertical {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
+      gap: var(--dimensions-xx-tiny);
 
       .step-bar__item {
         &:after {
           content: "";
-          width: 4px;
+          width: var(--dimensions-xx-tiny);
           height: 30px;
           display: block;
           background: #cfd4dd;
-          border-radius: 24px;
+          border-radius: var(--dimensions-medium);
         }
       }
     }
   }
 
   &__minimal &__item--header-bar {
-    height: 4px;
-    border-radius: 24px;
+    height: var(--dimensions-xx-tiny);
+    border-radius: var(--dimensions-medium);
   }
 
 /*
@@ -145,12 +145,12 @@
     &--header {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: var(--dimensions-tiny);
       &-status {
         color: #8994a9;
-        min-width: 40px;
-        width: 40px;
-        height: 40px;
+        min-width: var(--size-fixed-xx-large);
+        width: var(--size-fixed-xx-large);
+        height: var(--size-fixed-xx-large);
         background-color: var(--color-white);
         border-radius: 100%;
         border: 1px solid;
@@ -166,7 +166,7 @@
     }
     &--label {
       color: #8994a9;
-      font-size: 14px;
+      font-size: var(--font-size-small);
       padding-left: 50px;
     }
   }
