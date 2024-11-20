@@ -7,7 +7,7 @@ import Text from '../../elements/text';
 import Tag from '../tag';
 
 import Accordion from './Accordion';
-import {OContext} from "../../utils";
+import { OContext } from '../../utils';
 
 const meta = {
     args: {
@@ -108,15 +108,15 @@ export const WithChildrenTitle: Story = {
         childrenTitle: (
             <div
                 style={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    paddingRight: "4px",
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    paddingRight: '4px',
                 }}
             >
-                <div style={{ width: "100%", display: "flex", gap: "12px" }}>
+                <div style={{ width: '100%', display: 'flex', gap: '12px' }}>
                     <Text>client name</Text>
-                    <Tag context={"primary"}>Tag</Tag>
+                    <Tag context={'primary'}>Tag</Tag>
                 </div>
                 <Text>Date</Text>
             </div>
@@ -128,7 +128,7 @@ export const WithChildrenTitle: Story = {
 export const Contexts: Story = {
     args: {},
     render: (args) => (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {
                 OContext.map((context) => (
                     <Accordion {...args} key={context} context={context} title={context} children={`${args.children} - ${context}`} />

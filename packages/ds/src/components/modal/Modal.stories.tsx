@@ -4,10 +4,11 @@ import { useState } from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Modal, { ModalProps } from './Modal';
+import { OColors, OContext } from '../../utils';
 
 import Button from '../button';
-import {OColors, OContext} from "../../utils";
+
+import Modal, { ModalProps } from './Modal';
 
 const meta = {
     args: {

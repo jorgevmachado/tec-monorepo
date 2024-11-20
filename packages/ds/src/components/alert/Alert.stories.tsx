@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import {OAlert} from "./interface";
+import { OAlert } from './interface';
 
 import Alert from './Alert';
 
@@ -58,7 +58,7 @@ export const Default: Story = {
 export const Types: Story = {
     args: {},
     render: (args) => (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {OAlert.map((type) => (
                 <Alert {...args} key={type} type={type}> {type} </Alert>
             ))}
@@ -72,7 +72,7 @@ export const TypesWithCloseButton: Story = {
         onClose: () => alert('Closed!')
     },
     render: (args) => (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {OAlert.map((type) => (
                 <Alert {...args} key={type} type={type}> {type} </Alert>
             ))}
@@ -102,7 +102,7 @@ export const TypesWithLinkAndManyLines: Story = {
         hasCloseButton: true,
     },
     render: (args) => (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {OAlert.map((type) => (
                 <Alert {...args} key={type} type={type}> {type} {args.children} </Alert>
             ))}

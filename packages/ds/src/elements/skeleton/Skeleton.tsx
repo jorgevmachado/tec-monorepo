@@ -32,7 +32,7 @@ export default function Skeleton({
     return (
         <div
             {...props}
-            style={{width: freeWidth, height: freeHeight}}
+            style={{ width: freeWidth, height: freeHeight }}
             className="skeleton"
             data-testid="skeleton">
             <div

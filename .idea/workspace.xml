@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix size text in accordion">
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix storybook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/alert/alert.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/alert/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/checkbox/Checkbox.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/checkbox/Checkbox.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/Button.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/collapse/Collapse.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/collapse/Collapse.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/dropdown/Dropdown.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/dropdown/Dropdown.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/label/Label.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/label/Label.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/rating/Rating.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/rating/Rating.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/step-bar/StepBar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/step-bar/StepBar.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -414,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732127364645</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fix storybook">
+      <option name="closed" value="true" />
+      <created>1732129803528</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1732129803528</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +430,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="create element Text with storybook" />
     <MESSAGE value="create element Icon with storybook" />
     <MESSAGE value="create element Avatar with storybook" />
     <MESSAGE value="create element Image with storybook but fallback dont work in storybook" />
@@ -447,14 +454,15 @@
     <MESSAGE value="implement accordion component with storybook" />
     <MESSAGE value="implement tag component with storybook" />
     <MESSAGE value="fix size text in accordion" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix size text in accordion" />
+    <MESSAGE value="fix storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix storybook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx</url>
-          <line>40</line>
+          <line>41</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>

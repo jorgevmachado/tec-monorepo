@@ -23,7 +23,7 @@
     "dev": "echo 'Add dev script here'",
     "build": "rimraf dist && tsc && tsc-alias -p tsconfig.aliases.json",
     "gen": "turbo gen ds",
-    "lint": "eslint . --max-warnings 0",
+    "lint": "eslint . --max-warnings 0 --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

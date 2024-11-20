@@ -154,7 +154,7 @@ export const Fluid: Story = {
     render: (args) => (
         <>
             { OContext.map((context) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={context} context={context}> {context} with fluid </Button>
                     <br/>
                 </div>
@@ -170,7 +170,7 @@ export const Rounded: Story = {
     render: (args) => (
         <>
             { OContext.map((context) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={context} context={context}> {context} with rounded</Button>
                     <br/>
                 </div>
@@ -184,7 +184,7 @@ export const Contexts: Story = {
     render: (args) => (
         <>
             { OContext.map((context) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={context} context={context}> {context} </Button>
                     <br/>
                 </div>
@@ -200,7 +200,7 @@ export const Disabled: Story = {
     render: (args) => (
         <>
             { OContext.map((context) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={context} context={context}> {context} with disabled </Button>
                     <br/>
                 </div>
@@ -216,7 +216,7 @@ export const Appearance: Story = {
     render: (args) => (
         <>
             { OAppearance.map((appearance) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={appearance} appearance={appearance}> {appearance} </Button>
                     <br/>
                 </div>
@@ -233,7 +233,7 @@ export const AppearanceWithIconLeft: Story = {
     render: (args) => (
         <>
             { OAppearance.map((appearance) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={appearance} appearance={appearance}> {appearance} </Button>
                     <br/>
                 </div>
@@ -251,7 +251,7 @@ export const AppearanceWithIconRight: Story = {
     render: (args) => (
         <>
             { OAppearance.map((appearance) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={appearance} appearance={appearance}> {appearance} </Button>
                     <br/>
                 </div>
@@ -268,7 +268,7 @@ export const AppearanceWithNotification: Story = {
     render: (args) => (
         <>
             { OAppearance.map((appearance) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={appearance} appearance={appearance}> {appearance} </Button>
                     <br/>
                 </div>
@@ -287,7 +287,7 @@ export const AppearanceWithNotificationCustomColors: Story = {
     render: (args) => (
         <>
             { OAppearance.map((appearance) => (
-                <div style={{marginBottom: '1rem'}}>
+                <div style={{ marginBottom: '1rem' }}>
                     <Button {...args} key={appearance} appearance={appearance}> {appearance} </Button>
                     <br/>
                 </div>

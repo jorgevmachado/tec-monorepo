@@ -5,7 +5,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { OContext } from '../../utils';
 
 import Spinner from './';
-import Link from "../../components/link";
 
 const meta = {
     args: {
@@ -44,10 +43,10 @@ export const Default: Story = {
 export const Contexts: Story = {
     args: { },
     render: (args) => (
-        <div style={{display: 'flex', flexDirection: 'column', gap: '8px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {OContext.map((context) => (
                 <Spinner {...args} key={context} context={context}/>
             ))}
         </div>
     )
-}
+};

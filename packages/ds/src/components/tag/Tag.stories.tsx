@@ -2,8 +2,9 @@ import * as React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { OContext, OIcon } from '../../utils';
+
 import Tag from './Tag';
-import {OContext, OIcon} from "../../utils";
 
 const ODirection = ['left', 'right'];
 
@@ -89,7 +90,7 @@ export const Default: Story = {
 export const Contexts: Story = {
     args: {},
     render: (args) => (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {
                 OContext.map((context) => (
                     <Tag {...args} key={context} context={context}>

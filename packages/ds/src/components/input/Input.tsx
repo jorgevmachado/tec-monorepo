@@ -119,17 +119,17 @@ export default function Input({
     
     const inputItemClassNameList = joinClass([
         'input__item',
-        `${Boolean(childrenElements['icon-left']) ? 'input__item--icon-left' : ''}`,
-        `${Boolean(childrenElements['icon'] || childrenElements['icon-right']) ? 'input__item--icon-right' : ''}`,
-        `${Boolean(addon) ? 'input__item--addon' : ''}`,
-        `${Boolean(childrenElements['append'] && !hasFloatingSlots) ? 'input__item--append' : ''}`,
-        `${Boolean(childrenElements['counter']) ? 'input__item--counter' : ''}`,
-        `${Boolean(childrenElements['prepend'] && !hasFloatingSlots) ? 'input__item--prepend' : ''}`,
+        `${childrenElements['icon-left'] ? 'input__item--icon-left' : ''}`,
+        `${childrenElements['icon'] || childrenElements['icon-right'] ? 'input__item--icon-right' : ''}`,
+        `${addon ? 'input__item--addon' : ''}`,
+        `${childrenElements['append'] && !hasFloatingSlots ? 'input__item--append' : ''}`,
+        `${childrenElements['counter'] ? 'input__item--counter' : ''}`,
+        `${childrenElements['prepend'] && !hasFloatingSlots ? 'input__item--prepend' : ''}`,
         `input__item--variant-${variant}`,
-        `${Boolean(isInvalid) ? 'input__item--invalid' : ''}`,
-        `${Boolean(disabled) ? 'input__item--disabled' : ''}`,
-        `${Boolean(multiline) ? 'input__item--multiline' : ''}`,
-        `${Boolean(isInputMouseFocused) ? 'input__item--mouse-focus' : ''}`,
+        `${isInvalid ? 'input__item--invalid' : ''}`,
+        `${disabled ? 'input__item--disabled' : ''}`,
+        `${multiline ? 'input__item--multiline' : ''}`,
+        `${isInputMouseFocused ? 'input__item--mouse-focus' : ''}`,
     ]);
 
     useEffect(() => {

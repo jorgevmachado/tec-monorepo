@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Skeleton from './';
-import { ORadius } from "./Skeleton";
+import Skeleton, { ORadius } from './Skeleton';
 
 const meta = {
     args: {
@@ -61,32 +60,32 @@ export const Default: Story = {
     args: { }
 };
 
-export const borderRadiusSmall: Story = {
+export const BorderRadiusSmall: Story = {
     args: {
         radius: 'small',
     }
 };
 
-export const borderRadiusRegular: Story = {
+export const BorderRadiusRegular: Story = {
     args: {
         radius: 'regular',
     }
 };
 
-export const borderRadiusLarge: Story = {
+export const BorderRadiusLarge: Story = {
     args: {
         radius: 'large',
     }
 };
 
-export const borderRadiusRounded: Story = {
+export const BorderRadiusRounded: Story = {
     args: {
         width: '100',
         radius: 'rounded',
     }
 };
 
-export const borderRadiusCircle: Story = {
+export const BorderRadiusCircle: Story = {
     args: {
         radius: 'circle',
     }

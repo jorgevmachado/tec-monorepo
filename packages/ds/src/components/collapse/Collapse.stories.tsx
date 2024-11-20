@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Collapse from './Collapse';
-import {OContext} from "../../utils";
+import { OContext } from '../../utils';
 
 const text = 'Atirei o pau no gatis, per gatis num morreus. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.Atirei o pau no gatis, per gatis num morreus. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.';
 
@@ -83,8 +83,8 @@ export const WithoutActionComponent: Story = {
 export const WithCustomTexts: Story = {
     args: {
         context: 'primary',
-        openedText: "Close",
-        closedText: "Open",
+        openedText: 'Close',
+        closedText: 'Open',
     }
 };
 
