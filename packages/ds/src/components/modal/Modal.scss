@@ -16,7 +16,7 @@
   width: fit-content;
   margin: 0;
   display: flex;
-  padding: 64px 16px;
+  padding: var(--dimensions-huge) var(--dimensions-regular);
   z-index: 32;
   position: fixed;
   overflow: auto;
@@ -54,9 +54,9 @@
 
   &__spacing {
     &--md {
-      padding: 56px;
+      padding: var(--dimensions-xx-big);
       @media (max-width: var(--breakpoints-md)) {
-        padding: 56px 24px;
+        padding: var(--dimensions-xx-big) var(--dimensions-medium);
       }
     }
     &--lg {
@@ -124,7 +124,7 @@
   }
 
   @media (min-width: var(--breakpoints-md)) {
-    padding: 64px 24px;
+    padding: var(--dimensions-huge) var(--dimensions-medium);
     max-height: 100%;
   }
 
