@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix storybook">
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix lint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/Button.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/collapse/Collapse.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/collapse/Collapse.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/input/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/rating/Rating.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/rating/Rating.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/skeleton/Skeleton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/spinner/Spinner.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/components/tag",
@@ -101,7 +91,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -117,6 +107,7 @@
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
       <workItem from="1731933027062" duration="10025000" />
+      <workItem from="1732130449523" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -422,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732129803528</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix lint">
+      <option name="closed" value="true" />
+      <created>1732130053306</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1732130053306</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +429,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="create element Icon with storybook" />
     <MESSAGE value="create element Avatar with storybook" />
     <MESSAGE value="create element Image with storybook but fallback dont work in storybook" />
     <MESSAGE value="create element Link with storybook" />
@@ -455,7 +453,8 @@
     <MESSAGE value="implement tag component with storybook" />
     <MESSAGE value="fix size text in accordion" />
     <MESSAGE value="fix storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix storybook" />
+    <MESSAGE value="fix lint" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lint" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -463,7 +462,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/packages/ds/src/components/modal/Modal.stories.tsx</url>
           <line>41</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

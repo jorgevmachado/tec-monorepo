@@ -13,7 +13,7 @@ import {
 
 import './Tag.scss';
 
-type TDirection = 'left' | 'right';
+export type TDirection = 'left' | 'right';
 
 interface TagProps extends React.HTMLAttributes<HTMLDivElement>{
     icon?: React.ReactNode | TIcon;

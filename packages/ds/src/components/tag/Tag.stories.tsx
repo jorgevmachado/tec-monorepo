@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { OContext, OIcon } from '../../utils';
 
-import Tag from './Tag';
+import Tag, {TDirection} from './Tag';
 
 const ODirection = ['left', 'right'];
 
@@ -112,14 +112,14 @@ export const WithIcon: Story = {
 
 export const WithDetail: Story = {
     args: {
-        detail: 'left',
+        detail: 'left' as TDirection,
         context: 'error',
     }
 };
 
 export const WithInclination: Story = {
     args: {
-        inclined: 'right',
+        inclined: 'right' as TDirection,
         context: 'success',
     }
 };
