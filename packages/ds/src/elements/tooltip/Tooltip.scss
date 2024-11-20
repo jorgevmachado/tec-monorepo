@@ -40,8 +40,8 @@
     }
   }
   &__container {
-    position: relative;
     display: inline-block;
+    position: relative;
 
     @include focus;
 
@@ -50,190 +50,187 @@
       display: block;
     }
     &--body {
+      width: max-content;
       outline: none;
       display: none;
       z-index: 999;
       position: absolute;
-      width: max-content;
 
       &-caret {
-        width: 0.5rem;
-        height: 0.5rem;
-        //background: #3c4453;
+        width: var(--size-tiny);
+        height: var(--size-tiny);
         display: block;
         border-radius: 100%;
 
 
         &:after {
           content: "";
-          //background: #3c4453;
           display: block;
           position: relative;
         }
       }
 
       &-content {
-        border-radius: 4px;
-        padding: 8px;
-        //background-color: #3c4453;
-        //color: #fff;
-        font-size: 14px;
+        padding: var(--dimensions-tiny);
         max-width: 400px;
+        font-size: var(--font-size-small);
+        border-radius: var(--border-radius-small);
         &__title {
-          font-weight: 500;
+          font-weight: var(--font-weight-medium);
         }
       }
     }
     &--align {
       &-top {
-        bottom: 100%;
         left: 50%;
+        bottom: 100%;
         transform: translate(-50%, 0);
-        margin-bottom: 18px;
+        margin-bottom: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          position: absolute;
+          left: calc(50% - var(--size-fixed-xx-tiny));
           bottom: -16px;
-          left: calc(50% - 4px);
+          position: absolute;
 
           &:after {
-            height: 8px;
-            width: 2px;
-            bottom: 8px;
             left: 3px;
+            width: var(--size-fixed-x-tiny);
+            height: var(--size-fixed-tiny);
+            bottom: var(--size-fixed-tiny);
           }
         }
       }
 
       &-left {
-        right: 100%;
-        margin-right: 18px;
         top: 50%;
+        right: 100%;
         transform: translate(0, -50%);
+        margin-right: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          margin-right: -16px;
-          position: absolute;
-          top: calc(50% - 4px);
+          top: calc(50% - var(--size-fixed-xx-tiny));
           right: 0;
+          position: absolute;
+          margin-right: -16px;
 
           &:after {
+            right: var(--size-fixed-tiny);
+            width: var(--size-fixed-tiny);
             height: 2px;
-            width: 8px;
             bottom: -3px;
-            right: 8px;
           }
         }
       }
 
       &-right {
-        left: 100%;
         top: 50%;
+        left: 100%;
         transform: translate(0, -50%);
-        margin-left: 18px;
+        margin-left: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          margin-left: -16px;
+          top: calc(50% - var(--size-fixed-xx-tiny));
           position: absolute;
-          top: calc(50% - 4px);
+          margin-left: -16px;
+
 
           &:after {
+            left: var(--size-fixed-tiny);
+            width: var(--size-fixed-tiny);
             height: 2px;
-            width: 8px;
             bottom: -3px;
-            left: 8px;
           }
         }
       }
 
       &-bottom {
-        margin-top: 18px;
         left: 50%;
         transform: translate(-50%, 0);
+        margin-top: var(--dimensions-x-regular);
         .tooltip__container--body-caret {
-          position: absolute;
-          left: calc(50% - 4px);
           top: -16px;
+          left: calc(50% - var(--size-fixed-xx-tiny));
+          position: absolute;
 
           &:after {
-            height: 8px;
-            width: 2px;
-            bottom: -8px;
             left: 3px;
+            width: var(--size-fixed-x-tiny);
+            height: var(--size-fixed-tiny);
+            bottom: -8px;
           }
         }
       }
 
       &-top-left {
-        bottom: 100%;
         right: 50%;
-        margin-bottom: 18px;
+        bottom: 100%;
+        margin-bottom: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          position: absolute;
-          bottom: -16px;
           right: 0;
+          bottom: -16px;
+          position: absolute;
 
           &:after {
-            height: 8px;
-            width: 2px;
-            bottom: 8px;
             left: 3px;
+            width: var(--size-fixed-x-tiny);
+            height: var(--size-fixed-tiny);
+            bottom: var(--size-fixed-tiny);
           }
         }
       }
 
       &-top-right {
-        bottom: 100%;
         left: 50%;
-        margin-bottom: 18px;
+        bottom: 100%;
+        margin-bottom: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          position: absolute;
-          bottom: -16px;
           left: 0;
+          bottom: -16px;
+          position: absolute;
 
           &:after {
-            height: 8px;
-            width: 2px;
-            bottom: 8px;
             left: 3px;
+            width: var(--size-fixed-x-tiny);
+            height: var(--size-fixed-tiny);
+            bottom: var(--size-fixed-tiny);
           }
         }
       }
 
       &-bottom-left {
-        margin-top: 18px;
-        right: calc(50% - 4px);
+        right: calc(50% - var(--size-fixed-xx-tiny));
+        margin-top: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          position: absolute;
-          right: 0;
           top: -16px;
+          right: 0;
+          position: absolute;
 
           &:after {
-            height: 8px;
-            width: 2px;
-            bottom: -8px;
             left: 3px;
+            width: var(--size-fixed-x-tiny);
+            bottom: -8px;
+            height: var(--size-fixed-tiny);
           }
         }
       }
 
       &-bottom-right {
-        margin-top: 18px;
         left: 50%;
+        margin-top: var(--dimensions-x-regular);
 
         .tooltip__container--body-caret {
-          position: absolute;
-          left: 0;
           top: -16px;
+          left: 0;
+          position: absolute;
 
           &:after {
-            height: 8px;
-            width: 2px;
-            bottom: -8px;
             left: 3px;
+            width: var(--size-fixed-x-tiny);
+            height: var(--size-fixed-tiny);
+            bottom: -8px;
           }
         }
       }

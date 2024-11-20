@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix lint">
+      <change afterPath="$PROJECT_DIR$/packages/tokens/src/globals/size/fixed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/elements/tooltip/Tooltip.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tokens/src/globals/dimensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tokens/src/globals/dimensions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tokens/src/globals/font/line-height.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tokens/src/globals/font/line-height.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tokens/src/globals/font/size.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tokens/src/globals/font/size.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tokens/src/globals/size.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tokens/src/globals/size/size.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +85,11 @@
       <recent name="$PROJECT_DIR$/packages/ds/src/styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/tokens/src/globals/size" />
       <recent name="$PROJECT_DIR$/packages/ds/src/components" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/sizes" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/color" />
       <recent name="$PROJECT_DIR$/packages/ds/turbo/generators/templates" />
-      <recent name="$PROJECT_DIR$/packages/tokens/src/globals" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -107,7 +111,7 @@
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
       <workItem from="1731933027062" duration="10025000" />
-      <workItem from="1732130449523" duration="39000" />
+      <workItem from="1732130449523" duration="2007000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -421,7 +425,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732130053306</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix lint">
+      <option name="closed" value="true" />
+      <created>1732130502761</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1732130502761</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
