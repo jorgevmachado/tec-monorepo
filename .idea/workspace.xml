@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var Modal.scss">
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/radio/Radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/radio/Radio.scss" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var StepBar.scss">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/Tag.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,31 +106,7 @@
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
       <workItem from="1731933027062" duration="10025000" />
-      <workItem from="1732130449523" duration="3693000" />
-    </task>
-    <task id="LOCAL-00004" summary="node version">
-      <option name="closed" value="true" />
-      <created>1731521305118</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1731521305118</updated>
-    </task>
-    <task id="LOCAL-00005" summary="create workspace services">
-      <option name="closed" value="true" />
-      <created>1731533621442</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1731533621442</updated>
-    </task>
-    <task id="LOCAL-00006" summary="create workspace business (wip)">
-      <option name="closed" value="true" />
-      <created>1731534784872</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1731534784872</updated>
+      <workItem from="1732130449523" duration="4395000" />
     </task>
     <task id="LOCAL-00007" summary="create workspace business (wip)">
       <option name="closed" value="true" />
@@ -499,7 +476,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732133952065</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix scss var Radio.scss">
+      <option name="closed" value="true" />
+      <created>1732134152657</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1732134152657</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix scss var Rating.scss">
+      <option name="closed" value="true" />
+      <created>1732134247031</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1732134247031</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fix scss var StepBar.scss">
+      <option name="closed" value="true" />
+      <created>1732134484285</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1732134484285</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,9 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="implement modal component with storybook" />
-    <MESSAGE value="implement label component with storybook" />
-    <MESSAGE value="implement Feedback component with storybook" />
     <MESSAGE value="implement Input component with storybook" />
     <MESSAGE value="implement Checkbox component with storybook" />
     <MESSAGE value="implement Collapse component with storybook" />
@@ -532,7 +530,10 @@
     <MESSAGE value="fix scss var Label.scss" />
     <MESSAGE value="fix scss var Link.scss" />
     <MESSAGE value="fix scss var Modal.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix scss var Modal.scss" />
+    <MESSAGE value="fix scss var Radio.scss" />
+    <MESSAGE value="fix scss var Rating.scss" />
+    <MESSAGE value="fix scss var StepBar.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix scss var StepBar.scss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
