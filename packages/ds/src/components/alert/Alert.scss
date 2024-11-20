@@ -7,7 +7,7 @@
   padding: var(--dimensions-regular);
   display: flex;
   position: relative;
-  max-width: calc(0.8 * 720px);
+  max-width: calc(0.8 * var(--breakpoints-md));
   border-radius: var(--borders-regular);
   justify-content: space-between;
 
@@ -16,13 +16,14 @@
       min-width: var(--dimensions-medium);
     }
     &--close {
-      width: 18px;
+      width: var(--dimensions-x-regular);
+      height: var(--dimensions-medium);
       display: flex;
-      min-width: 18px;
+      min-width: var(--dimensions-x-regular);
       user-select: none;
       align-items: center;
       vertical-align: top;
-      height: 1.5rem;
+
       &:hover {
         cursor: pointer;
       }

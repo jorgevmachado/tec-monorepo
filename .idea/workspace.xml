@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var tooltip">
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/accordion/Accordion.scss" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var accordion">
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/alert/Alert.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
       <workItem from="1731933027062" duration="10025000" />
-      <workItem from="1732130449523" duration="2210000" />
+      <workItem from="1732130449523" duration="2385000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -435,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732132512871</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fix scss var accordion">
+      <option name="closed" value="true" />
+      <created>1732132695369</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1732132695369</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +451,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="create element Image with storybook but fallback dont work in storybook" />
     <MESSAGE value="create element Link with storybook" />
     <MESSAGE value="update gitignore" />
     <MESSAGE value="implement element button with storybook" />
@@ -468,7 +475,8 @@
     <MESSAGE value="fix storybook" />
     <MESSAGE value="fix lint" />
     <MESSAGE value="fix scss var tooltip" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix scss var tooltip" />
+    <MESSAGE value="fix scss var accordion" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix scss var accordion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
