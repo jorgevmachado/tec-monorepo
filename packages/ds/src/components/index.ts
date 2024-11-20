@@ -12,3 +12,4 @@ export * from './checkbox';
 export * from './collapse';
 export * from './step-bar';
 export * from './rating';
+export * from './accordion';

@@ -24,7 +24,10 @@ export type TIcon =
     |'hamburger'
     |'arrow-down'
     |'arrow-right'
-    |'star-filled';
+    |'star-filled'
+    |'arrow-up-outline'
+    |'arrow-down-outline'
+    ;
 
 export const OIcon: Array<TIcon> = [
     'user',

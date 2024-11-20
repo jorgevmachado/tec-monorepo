@@ -3,9 +3,16 @@ import React from 'react';
 import { CiCalendar, CiCamera, CiHeart, CiPhone, CiUser, CiWarning } from 'react-icons/ci';
 import { FaCheck, FaFacebook, FaGoogle, FaHamburger, FaReact, FaRegLightbulb } from 'react-icons/fa';
 import { IoClose, IoDocumentTextOutline } from 'react-icons/io5';
-import { MdOutlineArrowDropDown, MdOutlineArrowDropUp, MdOutlineInfo, MdOutlineKeyboardArrowRight, MdOutlineSpaceDashboard } from 'react-icons/md';
+import { IoIosStar, IoIosStarHalf, IoIosStarOutline, IoMdExit } from 'react-icons/io';
+import {
+    MdOutlineArrowDropDown,
+    MdOutlineArrowDropUp,
+    MdOutlineInfo,
+    MdOutlineKeyboardArrowDown,
+    MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowUp,
+    MdOutlineSpaceDashboard
+} from 'react-icons/md';
 import { GiConfirmed } from 'react-icons/gi';
-import {IoIosStar, IoIosStarHalf, IoIosStarOutline, IoMdExit} from 'react-icons/io';
 import { VscError } from 'react-icons/vsc';
 
 import type { TColors } from '../colors';
@@ -66,6 +73,10 @@ export function getIcon(icon: TIcon, size?: string | number, color?: TColors) {
             return <MdOutlineKeyboardArrowRight size={size || '1em'} color={color}/>;
         case 'star-filled':
             return <IoIosStar size={size || '1em'} color={color}/>;
+        case 'arrow-up-outline':
+            return <MdOutlineKeyboardArrowUp size={size || '1em'} color={color}/>;
+        case 'arrow-down-outline':
+            return <MdOutlineKeyboardArrowDown size={size || '1em'} color={color}/>;
         case 'react':
         default:
             return <FaReact size={size || '1em'} color={color} />;
