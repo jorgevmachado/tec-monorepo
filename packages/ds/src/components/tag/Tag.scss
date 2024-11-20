@@ -1,0 +1,239 @@
+@import "../../styles/main";
+
+@mixin context($backgroundColor, $color, $fill, $borderTopColor) {
+  background-color: $backgroundColor;
+  color: $color;
+
+  .color-path path {
+    fill: $fill;
+  }
+
+  &::before {
+    border-top-color: $borderTopColor;
+  }
+}
+.tag {
+  display: inline-flex;
+  position: relative;
+  border-radius: var(--border-radius-small);
+  padding: 4px 8px;
+
+/*
+ * =======
+ * CONTENT
+ * =======
+ */
+  &__content {
+    gap: 4px;
+    display: inline-flex;
+    line-height: 1.25rem;
+
+    .icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+
+/*
+ * =======
+ * INCLINE
+ * =======
+ */
+  &__incline--left,
+  &__incline--right {
+    &-position {
+      &__right {
+        position: absolute;
+        top: 0;
+        right: -14px;
+      }
+      &__left {
+        position: absolute;
+        top: 0;
+        left: -14px;
+      }
+    }
+
+  }
+
+/*
+ * =======
+ * INCLINED
+ * =======
+ */
+  &__inclined {
+    border-radius: 0;
+    &--right {
+      margin-left: 14px;
+      margin-right: 14px;
+      &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom: 0;
+        border-top: 12px solid;
+        border-right: 0;
+        position: absolute;
+        left: -14px;
+        top: 100%;
+      }
+    }
+    &--left {
+      margin-left: 14px;
+      margin-right: 14px;
+      &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom: 0;
+        border-top: 12px solid;
+        border-left: 0;
+        position: absolute;
+        right: -14px;
+        top: 100%;
+      }
+    }
+  }
+
+/*
+ * =======
+ * DETAIL
+ * =======
+ */
+  &__detail {
+    &--left {
+      border-bottom-left-radius: 0;
+      &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom: 0;
+        border-top: 12px solid;
+        border-right: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+      }
+    }
+    &--right {
+      border-bottom-right-radius: 0;
+      &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom: 0;
+        border-top: 12px solid;
+        border-left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+      }
+    }
+  }
+
+
+/*
+ * =======
+ * ICON SIDE
+ * =======
+ */
+  &__icon--side {
+    &-right{
+      .tag__content {
+        flex-direction: row-reverse;
+      }
+    }
+    &-left {
+      .tag__content {
+        flex-direction: row;
+      }
+    }
+  }
+
+/*
+ * =======
+ * CONTEXT
+ * =======
+ */
+  &__context {
+    &-primary {
+      @include context(
+                      var(--color-primary-50),
+                      var(--color-primary-100),
+                      var(--color-primary-50),
+                      var(--color-primary-80)
+      );
+    }
+    &-secondary {
+      @include context(
+                      var(--color-secondary-50),
+                      var(--color-secondary-100),
+                      var(--color-secondary-50),
+                      var(--color-secondary-80)
+      );
+    }
+    &-info {
+      @include context(
+                      var(--color-info-60),
+                      var(--color-info-90),
+                      var(--color-info-60),
+                      var(--color-info-70)
+      );
+    }
+    &-success {
+      @include context(
+                      var(--color-success-60),
+                      var(--color-success-90),
+                      var(--color-success-60),
+                      var(--color-success-70)
+      );
+    }
+    &-attention {
+      @include context(
+                      var(--color-attention-60),
+                      var(--color-attention-90),
+                      var(--color-attention-60),
+                      var(--color-attention-70)
+      );
+    }
+    &-error {
+      @include context(
+                      var(--color-error-60),
+                      var(--color-error-90),
+                      var(--color-error-60),
+                      var(--color-error-70)
+      );
+    }
+    &-neutral {
+      @include context(
+                      var(--color-neutral-50),
+                      var(--color-neutral-80),
+                      var(--color-neutral-50),
+                      var(--color-neutral-60)
+      );
+    }
+  }
+
+  &__full-width {
+    width: 100%;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  &__wide-icon {
+    .icon {
+      display: flex;
+      height: 1rem;
+      width: auto;
+      padding-top: 6px;
+    }
+  }
+}

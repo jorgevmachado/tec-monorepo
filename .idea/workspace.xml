@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement rating component with storybook and implement tooltip element with storybook">
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="implement accordion component with storybook">
+      <change afterPath="$PROJECT_DIR$/packages/ds/src/components/tag/inclined-assets.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/ds/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/utils/icons/options.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,32 +52,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/components/step-bar&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/packages/ds/src/components/tag",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/jorgevieira/Desktop/PROJECTS/TEC/tec-monorepo/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/ds/src/components/tag" />
       <recent name="$PROJECT_DIR$/packages/ds/src/components/step-bar" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/use-generate-component-id" />
       <recent name="$PROJECT_DIR$/packages/ds/src/utils/use-outside-click" />
       <recent name="$PROJECT_DIR$/packages/ds/src/styles" />
-      <recent name="$PROJECT_DIR$/packages/ds/src/utils/join-class" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/ds/src/components" />
@@ -380,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732116356842</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="implement accordion component with storybook">
+      <option name="closed" value="true" />
+      <created>1732119814988</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1732119814988</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +395,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="create workspace business (wip)" />
     <MESSAGE value="finish business without unit test" />
     <MESSAGE value="finish tokens with style-dictionary" />
     <MESSAGE value="create element Text with storybook" />
@@ -413,6 +419,7 @@
     <MESSAGE value="implement Collapse component with storybook" />
     <MESSAGE value="fix element Text" />
     <MESSAGE value="implement rating component with storybook and implement tooltip element with storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement rating component with storybook and implement tooltip element with storybook" />
+    <MESSAGE value="implement accordion component with storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement accordion component with storybook" />
   </component>
 </project>
