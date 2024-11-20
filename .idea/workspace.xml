@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var alert">
-      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/button/Button.scss" afterDir="false" />
+    <list default="true" id="bb1eb443-f8cd-41ac-a02a-891333337140" name="Changes" comment="fix scss var collapse">
+      <change beforePath="$PROJECT_DIR$/packages/ds/src/components/dropdown/Dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/packages/ds/src/components/dropdown/Dropdown.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1731611799216" duration="35619000" />
       <workItem from="1731875554261" duration="4955000" />
       <workItem from="1731933027062" duration="10025000" />
-      <workItem from="1732130449523" duration="2600000" />
+      <workItem from="1732130449523" duration="2898000" />
     </task>
     <task id="LOCAL-00001" summary="BIG BANG">
       <option name="closed" value="true" />
@@ -451,7 +451,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732132868991</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fix scss var button">
+      <option name="closed" value="true" />
+      <created>1732133078626</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1732133078626</updated>
+    </task>
+    <task id="LOCAL-00045" summary="fix scss var checkbox">
+      <option name="closed" value="true" />
+      <created>1732133207678</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1732133207678</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fix scss var collapse">
+      <option name="closed" value="true" />
+      <created>1732133250536</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1732133250536</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,9 +483,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="update gitignore" />
-    <MESSAGE value="implement element button with storybook" />
-    <MESSAGE value="fix element link and button with storybook" />
     <MESSAGE value="implement element spinner with storybook" />
     <MESSAGE value="fix components" />
     <MESSAGE value="implement component Alert with storybook" />
@@ -484,7 +505,10 @@
     <MESSAGE value="fix scss var tooltip" />
     <MESSAGE value="fix scss var accordion" />
     <MESSAGE value="fix scss var alert" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix scss var alert" />
+    <MESSAGE value="fix scss var button" />
+    <MESSAGE value="fix scss var checkbox" />
+    <MESSAGE value="fix scss var collapse" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix scss var collapse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

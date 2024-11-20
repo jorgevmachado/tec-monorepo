@@ -7,7 +7,7 @@
       top: 100%;
       width: auto;
       z-index: 101;
-      padding: 1rem 0;
+      padding: var(--dimensions-regular) 0;
       position: absolute;
     }
     &--content-type__link {
@@ -16,7 +16,7 @@
       border-radius: var(--borders-regular);
       background-color: var(--colors-neutral-70);
       .link {
-        padding: .75rem 1.25rem;
+        padding: var(--dimensions-x-small) var(--dimensions-xx-regular);
         &:hover {
           color: var(--colors-neutral-12);
           background-color: $DarkColor;
@@ -25,7 +25,7 @@
     }
     &--content-type__button {
       .button {
-        padding: .75rem 1.25rem;
+        padding: var(--dimensions-x-small) var(--dimensions-xx-regular);
         margin-top: var(--dimensions-tiny);
       }
     }
@@ -38,7 +38,7 @@
           width: 100%;
           display: flex;
           border: 1px solid transparent;
-          padding: 1rem;
+          padding: var(--dimensions-regular);
           font-size: var(--dimensions-regular);
           font-weight: var(--text-weights-semi-bold);
           align-items: center;
@@ -58,7 +58,7 @@
           width: 100%;
           display: flex;
           border: 1px solid transparent;
-          padding: 2rem 1.5rem;
+          padding: var(--dimensions-large) var(--dimensions-medium);
           font-size: var(--dimensions-regular);
           font-weight: var(--text-weights-semi-bold);
           align-items: center;
@@ -127,14 +127,14 @@
       flex-direction: column;
       width: auto;
       z-index: 101;
-      padding: 1rem 0;
+      padding: var(--dimensions-regular) 0;
       position: absolute;
       margin-top: var(--dimensions-tiny);
       box-shadow: var(--shadows-x-small);
       border-radius: var(--borders-regular);
       background-color: var(--colors-neutral-70);
       .link {
-        padding: .75rem 1.25rem;
+        padding: var(--dimensions-x-small) var(--dimensions-xx-regular);
       }
     }
     &--content-type__button {
