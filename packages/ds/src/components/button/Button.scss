@@ -29,10 +29,10 @@
         &.button {
           background-color: transparent;
           &:hover:not(:focus) {
-            border-left: 4px solid transparent;
+            border-left: var(--dimensions-xx-tiny) solid transparent;
           }
           &:active, &-selected {
-            border-left: 4px solid $StrongDarkColor;
+            border-left: var(--dimensions-xx-tiny) solid $StrongDarkColor;
             background-color: $StrongLightColor;
           }
         }
@@ -112,22 +112,22 @@
   &__size {
     &--small {
       height: var(--dimensions-xxx-large);
-      padding: 0 1.5rem;
+      padding: 0 var(--dimensions-medium);
       line-height: var(--font-line-height-small);
     }
     &--medium {
       height: var(--dimensions-big);
-      padding: 0 1.5rem;
+      padding: 0 var(--dimensions-medium);
       line-height: var(--font-line-height-small);
     }
     &--large {
       height: var(--dimensions-xx-big);
-      padding: 0 1.5rem;
+      padding: 0 var(--dimensions-medium);
       line-height: var(--font-line-height-small);
     }
     &--big {
       height: var(--dimensions-xxx-big);
-      padding: 0 1.5rem;
+      padding: 0 var(--dimensions-medium);
       line-height: var(--font-line-height-small);
     }
   }
@@ -201,7 +201,7 @@
       border-color: transparent;
       cursor: pointer;
       display: flex;
-      padding: 2rem 1.5rem;
+      padding: var(--dimensions-large) var(--dimensions-medium);
       font-size: 1rem;
       transition: background 0.1s ease-in;
       font-weight: var(--font-weight-semi-bold);
@@ -211,7 +211,7 @@
       background-color: transparent;
 
       &:hover:not(:focus) {
-        border-left: 4px solid transparent;
+        border-left: var(--dimensions-xx-tiny) solid transparent;
       }
 
       &:active, &-selected {
@@ -262,10 +262,10 @@
       margin-left: var(--dimensions-tiny);
       &-counter {
         display: flex;
-        width: 24px;
-        height: 24px;
-        font-size: 14px;
-        font-weight: 500;
+        width: var(--dimensions-medium);
+        height: var(--dimensions-medium);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-medium);
         align-items: center;
         border-radius: 50%;
         justify-content: center;
