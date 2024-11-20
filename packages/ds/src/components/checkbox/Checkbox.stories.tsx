@@ -18,6 +18,51 @@ const meta = {
         modelValue: true,
     },
     title: 'Components/Checkbox',
+    argTypes: {
+        id: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        value: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        large: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        context: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'primary' },
+            },
+            options: OContext,
+            control: { type: 'select' },
+        },
+        disabled: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        modelValue: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+    },
     component: Checkbox,
 } satisfies Meta<typeof Checkbox>;
 

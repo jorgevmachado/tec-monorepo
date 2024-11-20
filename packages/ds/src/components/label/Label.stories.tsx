@@ -11,6 +11,29 @@ const meta = {
         componentId: 'label',
     },
     title: 'Components/Label',
+    argTypes: {
+        tip: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        label: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        componentId: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+    },
     component: Label,
 } satisfies Meta<typeof Label>;
 

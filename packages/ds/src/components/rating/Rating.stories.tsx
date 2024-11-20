@@ -19,6 +19,65 @@ const meta = {
         ratingInfoText: 'Service Satisfaction',
     },
     title: 'Components/Rating',
+    argTypes: {
+        length: {
+            table: {
+                type: { summary: 'number' },
+                defaultValue: { summary: '5' },
+            },
+            control: { type: 'number' },
+        },
+        rating: {
+            table: {
+                type: { summary: 'number' },
+                defaultValue: { summary: '0' },
+            },
+            control: { type: 'number' },
+        },
+        context: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'primary' },
+            },
+            options: OContext,
+            control: { type: 'select' },
+        },
+        halfStar: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        ratingInfo: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        ratingCount: {
+            table: {
+                type: { summary: 'number' },
+                defaultValue: { summary: '5' },
+            },
+            control: { type: 'number' },
+        },
+        roundRating: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        ratingInfoText: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'Service Satisfaction' },
+            },
+            control: { type: 'text' },
+        },
+    },
     component: Rating,
 } satisfies Meta<typeof Rating>;
 

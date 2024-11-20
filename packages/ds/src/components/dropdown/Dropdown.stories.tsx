@@ -2,11 +2,12 @@ import * as React from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { TContext } from "../../utils";
+import { OContext, TContext } from '../../utils';
 
-import Button, {TAppearance} from "../button";
+import Button, { TAppearance } from '../button';
 
 import Dropdown from './';
+import { OAppearance } from './interface';
 
 const meta = {
     args: {
@@ -18,6 +19,46 @@ const meta = {
         appearance: 'standard',
     },
     title: 'Components/Dropdown',
+    argTypes: {
+        type: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'button' },
+            },
+            options: ['link', 'button'],
+            control: { type: 'select' },
+        },
+        label: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        context: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'primary' },
+            },
+            options: OContext,
+            control: { type: 'select' },
+        },
+        disabled: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        appearance: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'standard' },
+            },
+            options: OAppearance,
+            control: { type: 'select' },
+        },
+    },
     component: Dropdown,
 } satisfies Meta<typeof Dropdown>;
 

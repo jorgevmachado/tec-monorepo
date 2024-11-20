@@ -4,9 +4,10 @@ import { useState } from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Modal, { ModalProps } from './modal';
+import Modal, { ModalProps } from './Modal';
 
 import Button from '../button';
+import {OColors, OContext} from "../../utils";
 
 const meta = {
     args: {
@@ -22,6 +23,68 @@ const meta = {
         removeBackgroundScroll: false,
     },
     title: 'Components/Modal',
+    argTypes: {
+        title: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        isOpen: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        spacing: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'md' },
+            },
+            options: ['md', 'lg'],
+            control: { type: 'select' },
+        },
+        context: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'primary' },
+            },
+            options: OContext,
+            control: { type: 'select' },
+        },
+        closeOnEsc: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        backDropColor: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'neutral-100' }
+            },
+            options: OColors,
+            control: { type: 'select' },
+
+        },
+        closeOnOutsideClick: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        removeBackgroundScroll: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+    },
     component: Modal,
     decorators: [(Story) => <div style={{ height: '50vh' }}><Story/></div>]
 } satisfies Meta<typeof Modal>;

@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { OContext } from '../../utils';
+
 import StepBar from './StepBar';
 
 import type { Step } from './interface';
@@ -35,6 +37,58 @@ const meta = {
         minimalLabel: undefined
     },
     title: 'Components/StepBar',
+    argTypes: {
+        minimal: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        context: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'neutral' },
+            },
+            options: OContext.filter((item) => item !== 'error' && item !== 'attention' ),
+            control: { type: 'select' },
+        },
+        vertical: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        totalSteps: {
+            table: {
+                type: { summary: 'number' },
+                defaultValue: { summary: 'undefined' },
+            },
+            control: { type: 'number' },
+        },
+        dataTestId: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        currentStep: {
+            table: {
+                type: { summary: 'number' },
+                defaultValue: { summary: '0' },
+            },
+            control: { type: 'number' },
+        },
+        minimalLabel: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'undefined' },
+            },
+            control: { type: 'text' },
+        },
+    },
     component: StepBar,
 } satisfies Meta<typeof StepBar>;
 

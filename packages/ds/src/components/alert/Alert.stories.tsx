@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import {OAlert} from "./interface";
 
-import Alert from './alert';
+import Alert from './Alert';
 
 const meta = {
     args: {

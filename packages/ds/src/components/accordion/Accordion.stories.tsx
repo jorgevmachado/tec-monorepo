@@ -21,6 +21,52 @@ const meta = {
         childrenTitle: undefined
     },
     title: 'Components/Accordion',
+    argTypes: {
+        title: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: '' },
+            },
+            control: { type: 'text' },
+        },
+        isOpen: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        context: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'primary' },
+            },
+            options: OContext,
+            control: { type: 'select' },
+        },
+        disabled: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+        iconFormat: {
+            table: {
+                type: { summary: 'string' },
+                defaultValue: { summary: 'small' },
+            },
+            options: ['small', 'big'],
+            control: { type: 'select' },
+        },
+        isBorderless: {
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+            control: { type: 'boolean' },
+        },
+    },
     component: Accordion,
 } satisfies Meta<typeof Accordion>;
 
