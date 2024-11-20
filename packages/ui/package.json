@@ -1,25 +1,33 @@
 {
   "name": "@tec/ui",
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "files": [
+    "dist"
+  ],
   "exports": {
-    "./button": {
-      "types": "./Button.tsx",
-      "default": "./dist/button.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
     },
-    "./header": {
-      "types": "./Header.tsx",
-      "default": "./dist/header.js"
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.js",
+      "require": "./dist/*/index.js"
     }
   },
   "scripts": {
-    "lint": "eslint *.ts*",
-    "build": "rollup --config",
-    "dev": "pnpm build --watch"
+    "build": "rimraf dist && tsc && tsc-alias -p tsconfig.aliases.json",
+    "gen": "turbo gen ui",
+    "lint": "eslint . --max-warnings 0 --fix"
   },
   "devDependencies": {
     "@tec/eslint-config": "*",
     "@tec/typescript-config": "*",
+    "@tec/ds": "*",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",

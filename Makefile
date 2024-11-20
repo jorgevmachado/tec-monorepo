@@ -54,3 +54,99 @@ run:
 	@:
 
 #------------------------------------------------- END ----------------------------------------------------------------#
+
+#------------------------------------------------- CLEAN --------------------------------------------------------------#
+clean-dependencies:
+	rm -rf ./node_modules
+	$(call delete_in_project,packages/ui,node_modules)
+	$(call delete_in_project,packages/business,node_modules)
+	$(call delete_in_project,packages/ds,node_modules)
+	$(call delete_in_project,packages/tokens,node_modules)
+	$(call delete_in_project,packages/services,node_modules)
+
+services-clean:
+	$(call delete_in_project,packages/services,dist)
+
+tokens-clean:
+	$(call delete_in_project,packages/tokens,dist)
+
+ds-clean:
+	$(call delete_in_project,packages/ds,dist)
+
+business-clean:
+	$(call delete_in_project,packages/business,dist)
+
+ui-clean:
+	$(call delete_in_project,packages/ui,dist)
+
+clean-builds:
+	make ui-clean
+	make business-clean
+	make ds-clean
+	make tokens-clean
+	make services-clean
+
+
+clean-all: clean-dependencies clean-builds
+#------------------------------------------------- END ----------------------------------------------------------------#
+
+#------------------------------------------------- INSTALL ------------------------------------------------------------#
+install:
+	yarn
+#------------------------------------------------- END ----------------------------------------------------------------#
+
+#------------------------------------------------- BUILD --------------------------------------------------------------#
+services-build-dirty:
+	$(call run_project,packages/services,build)
+
+services-build:
+	make services-clean
+	$(call run_project,packages/services,build)
+
+tokens-build-dirty:
+	$(call run_project,packages/tokens,build)
+
+tokens-build:
+	make tokens-clean
+	$(call run_project,packages/tokens,build)
+
+ds-build-dirty:
+	$(call run_project,packages/ds,build)
+
+ds-build:
+	make ds-clean
+	$(call run_project,packages/ds,build)
+
+business-build-dirty:
+	$(call run_project,packages/business,build)
+
+business-build:
+	make business-clean
+	$(call run_project,packages/business,build)
+
+ui-build-dirty:
+	$(call run_project,packages/ui,build)
+
+ui-build:
+	make ui-clean
+	$(call run_project,packages/ui,build)
+
+build-dependencies-dirty:
+	make services-build-dirty
+	make tokens-build-dirty
+	make ds-build-dirty
+	make business-build-dirty
+	make ui-build-dirty
+
+build-dependencies:
+	make services-build
+	make tokens-build
+	make ds-build
+	make business-build
+	make ui-build
+#------------------------------------------------- END ----------------------------------------------------------------#
+
+setup:
+	make clean-all
+	make install
+	make build-dependencies-dirty
