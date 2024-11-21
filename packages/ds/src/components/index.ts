@@ -14,3 +14,4 @@ export { default as StepBar } from './step-bar';
 export { default as Rating } from './rating';
 export { default as Accordion } from './accordion';
 export { default as Tag } from './tag';
+export { default as RadioGroup } from './radio-group';
