@@ -22,20 +22,40 @@
   "scripts": {
     "build": "rimraf dist && tsc && tsc-alias -p tsconfig.aliases.json",
     "gen": "turbo gen ui",
-    "lint": "eslint . --max-warnings 0 --fix"
+    "lint": "eslint . --max-warnings 0 --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "@tec/eslint-config": "*",
-    "@tec/typescript-config": "*",
-    "@tec/ds": "*",
+    "@chromatic-com/storybook": "^3.2.2",
+    "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "8.4.4",
+    "@storybook/addon-interactions": "8.4.4",
+    "@storybook/addon-onboarding": "8.4.4",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "8.4.4",
+    "@storybook/react": "8.4.4",
+    "@storybook/react-webpack5": "8.4.4",
+    "@storybook/test": "8.4.4",
+    "@tec/ds": "*",
+    "@tec/eslint-config": "*",
+    "@tec/tokens": "*",
+    "@tec/typescript-config": "*",
+    "@types/node": "^22.9.1",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "eslint": "^8.57.0",
+    "eslint-plugin-storybook": "^0.11.1",
     "rollup": "^4.12.0",
+    "rollup-plugin-sass": "^1.14.0",
+    "storybook": "8.4.4",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "5.5.4"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3"
   }
 }

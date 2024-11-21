@@ -1,13 +1,14 @@
 import React from 'react';
 
+import './Blank.scss';
+
 interface BlankProps {
-children: React.ReactNode;
+    children: React.ReactNode;
 }
 
 export default function Blank({ children }: BlankProps) {
     return (
-        <div>
-            <h1>Blank Component</h1>
+        <div className="blank">
             {children}
         </div>
     );

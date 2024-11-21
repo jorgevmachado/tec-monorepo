@@ -4,6 +4,7 @@ module.exports = {
   extends: [
     "@tec/eslint-config/react-internal.js",
     "plugin:storybook/recommended",
+    "plugin:storybook/recommended",
     "plugin:storybook/recommended"
   ],
   parser: "@typescript-eslint/parser",

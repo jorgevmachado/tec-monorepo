@@ -1,6 +1,6 @@
-export * from './text';
-export * from './icon';
-export * from './image';
-export * from './spinner';
-export * from './skeleton';
-export * from './tooltip';
+export { default as Text } from './text';
+export { default as Icon } from './icon';
+export { default as Image } from './image';
+export { default as Spinner } from './spinner';
+export { default as Skeleton } from './skeleton';
+export { default as Tooltip } from './tooltip';

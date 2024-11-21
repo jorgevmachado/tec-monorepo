@@ -41,13 +41,18 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: 'add',
+        path: 'src/{{ type }}/{{ kebabCase name }}/{{ pascalCase name }}.scss',
+        templateFile: 'templates/stylesheet.hbs',
+      },
+      {
+        type: 'add',
         path: 'src/{{ type }}/{{ kebabCase name }}/index.ts',
         templateFile: 'templates/index.hbs',
       },
       {
         type: 'append',
         path: 'src/{{ type }}/index.ts',
-        template: 'export * from \'./{{kebabCase name}}\';',
+        template: 'export { default as {{ pascalCase name }} } from \'./{{kebabCase name}}\';',
       },
     ]
   });
