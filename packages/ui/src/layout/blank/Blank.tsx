@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Fade } from '../../animations';
+
 import './Blank.scss';
 
 interface BlankProps {
@@ -8,8 +10,10 @@ interface BlankProps {
 
 export default function Blank({ children }: BlankProps) {
     return (
-        <div className="blank">
-            {children}
-        </div>
+        <Fade enter={true}>
+            <div className="blank">
+                {children}
+            </div>
+        </Fade>
     );
 };

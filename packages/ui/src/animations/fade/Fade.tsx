@@ -30,7 +30,6 @@ export default function Fade({ enter = true, delay = 0, timeout = .2, children }
     return (
         <div style={style}>
             {children}
-
         </div>
     );
 }
