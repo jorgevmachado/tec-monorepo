@@ -303,10 +303,10 @@
 .button__context--neutral {
   @include context(
     var(--color-neutral-90),
-    var(--color-info-60),
+    var(--color-neutral-60),
     var(--color-neutral-90),
     var(--color-neutral-80),
-    var(--color-info-80)
+    var(--color-neutral-80)
   );
 }
 .button__context--success {
@@ -321,7 +321,7 @@
 .button__context--primary {
   @include context(
     var(--color-primary-60),
-    var(--color-primary-70),
+    var(--color-primary-50),
     var(--color-primary-80),
     var(--color-primary-90),
     var(--color-primary-100)
@@ -330,7 +330,7 @@
 .button__context--secondary {
   @include context(
     var(--color-secondary-60),
-    var(--color-secondary-70),
+    var(--color-secondary-50),
     var(--color-secondary-80),
     var(--color-secondary-90),
     var(--color-secondary-100)

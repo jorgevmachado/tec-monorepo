@@ -8,8 +8,8 @@ import { OContext } from '../../utils';
 import RadioGroup, { RadioGroupProps } from './RadioGroup';
 
 const defaultExample = [
-    { value: 'pessoa-fisica', label: 'Pessoa Física' },
-    { value: 'pessoa-juridica', label: 'Pessoa Jurídica' },
+    { value: 'natural-person', label: 'Natural Person' },
+    { value: 'legal-entity', label: 'Legal entity' },
 ];
 
 const defaultRangeExample = Array.from(new Array(9), (_, i) => ({
@@ -18,9 +18,9 @@ const defaultRangeExample = Array.from(new Array(9), (_, i) => ({
 }));
 
 const defaultExampleMultiselect = [
-    { value: 'fotos', label: 'Fotos' },
-    { value: 'localizacao', label: 'Localização' },
-    { value: 'outros', label: 'Outros Motivos' },
+    { value: 'photos', label: 'Photos' },
+    { value: 'location', label: 'Location' },
+    { value: 'others', label: 'Other reasons' },
 ];
 
 const meta = {
@@ -28,7 +28,7 @@ const meta = {
         options: defaultExample,
         context: 'neutral',
         appearance: 'standard',
-        modelValue: 'pessoa-fisica',
+        modelValue: 'natural-person',
     },
     title: 'Components/RadioGroup',
     argTypes: {
@@ -58,7 +58,7 @@ const meta = {
         modelValue: {
             table: {
                 type: { summary: 'string' },
-                defaultValue: { summary: 'one' },
+                defaultValue: { summary: 'natural-person' },
             },
             control: { type: 'text' }
         },
@@ -98,7 +98,7 @@ const RenderTemplate = (args: RadioGroupProps) => {
 
 export const Default: Story = {
     args: {
-        modelValue: 'pessoa-fisica',
+        modelValue: 'natural-person',
         options: defaultExample,
     },
     render: RenderTemplate
@@ -107,7 +107,7 @@ export const Default: Story = {
 
 export const WithLabel: Story = {
     args: {
-        label: 'Escolha uma opção',
+        label: 'Choose an option',
         options: defaultExample,
     },
     render: RenderTemplate
@@ -125,7 +125,7 @@ export const WithRangeAppearance: Story = {
 export const WithRequiredMessage: Story = {
     args: {
         modelValue: undefined,
-        requiredMessage: 'Escolha uma opção',
+        requiredMessage: 'Choose an option',
         options: defaultExample,
     },
     render: RenderTemplate
@@ -137,17 +137,17 @@ export const WithRangeAndRequiredMessage: Story = {
         context: 'primary',
         options: defaultRangeExample,
         modelValue: undefined,
-        requiredMessage: 'Escolha uma opção',
+        requiredMessage: 'Choose an option',
     },
     render: RenderTemplate
 };
 
 export const WithMultiselect: Story = {
     args: {
-        label: 'Escolha varias opções',
+        label: 'Choose several options',
         options: defaultExampleMultiselect,
         multiSelect: true,
-        modelValue: ['localizacao'],
+        modelValue: ['location'],
     },
     render: RenderTemplate
 };
