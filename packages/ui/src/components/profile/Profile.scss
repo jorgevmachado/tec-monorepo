@@ -1,7 +1,7 @@
 .profile {
   gap: 15px;
   display: flex;
-  padding: 20px 24px 5px;
+  padding: var(--size-fixed-xx-regular) var(--size-fixed-medium) 5px;
   flex-direction: column;
   &__context {
     &--info {
