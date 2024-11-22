@@ -127,96 +127,52 @@ export default function Form({
         setInvalidPasswordConfirmation(false);
         
         
-        if (type === 'signIn') {
+        if (type !== 'forgotPassword') {
             const validEmail = validateInput(true, email, 'email');
             if (!validEmail) {
                 result.messages.push(invalidEmailMessage);
             }
-            const validPassword = validateInput(true, password, 'password');
-            if (!validPassword) {
-                result.messages.push(invalidPasswordMessage);
-            }
-            result.valid = !result.messages.length; 
-            return result; 
         }
         
-        if (type ==='signUp') {
+        if (type === 'signUp' || type === 'update') {
             const validCpf = validateInput(true, cpf, 'cpf');
             if (!validCpf) {
                 result.messages.push(invalidCpfMessage);
             }
+
             const validName = validateInput(true, name, 'name');
             if (!validName) {
                 result.messages.push(invalidNameMessage);
             }
-            const validEmail = validateInput(true, email, 'email');
-            if (!validEmail) {
-                result.messages.push(invalidEmailMessage);
-            }
+
             const validGender = validateInput(true, gender, 'gender');
             if (!validGender) {
                 result.messages.push(invalidGenderMessage);
             }
+
             const validWhatsUp = validateInput(true, whatsUp, 'whatsUp');
             if (!validWhatsUp) {
                 result.messages.push(invalidWhatsUpMessage);
             }
+
             const validDateOfBirth = validateInput(true, dateOfBirth, 'dateOfBirth');
             if (!validDateOfBirth) {
                 result.messages.push(invalidDateOfBirthMessage);
             }
-            const validPassword = validateInput(true, password, 'password');
-            if (!validPassword) {
-                result.messages.push(invalidPasswordMessage);
-            }
-            const validPasswordConfirmation = validateInput(true, passwordConfirmation, 'passwordConfirmation');
-            if (!validPasswordConfirmation) {
-                result.messages.push(invalidPasswordConfirmationMessage);
-            }
-            result.valid = !result.messages.length;
-            return result;
-        }
-        
-        if (type === 'update') {
-            const validCpf = validateInput(true, cpf, 'cpf');
-            if (!validCpf) {
-                result.messages.push(invalidCpfMessage);
-            }
-            const validName = validateInput(true, name, 'name');
-            if (!validName) {
-                result.messages.push(invalidNameMessage);
-            }
-            const validEmail = validateInput(true, email, 'email');
-            if (!validEmail) {
-                result.messages.push(invalidEmailMessage);
-            }
-            const validGender = validateInput(true, gender, 'gender');
-            if (!validGender) {
-                result.messages.push(invalidGenderMessage);
-            }
-            const validWhatsUp = validateInput(true, whatsUp, 'whatsUp');
-            if (!validWhatsUp) {
-                result.messages.push(invalidWhatsUpMessage);
-            }
-            const validDateOfBirth = validateInput(true, dateOfBirth, 'dateOfBirth');
-            if (!validDateOfBirth) {
-                result.messages.push(invalidDateOfBirthMessage);
-            }
-            result.valid = !result.messages.length;
-            return result;
         }
 
-        if (type === 'forgotPassword') {
+        if (type !== 'update') {
             const validPassword = validateInput(true, password, 'password');
             if (!validPassword) {
                 result.messages.push(invalidPasswordMessage);
             }
+        }
+        
+        if (type === 'signUp' || type === 'forgotPassword') {
             const validPasswordConfirmation = validateInput(true, passwordConfirmation, 'passwordConfirmation');
             if (!validPasswordConfirmation) {
                 result.messages.push(invalidPasswordConfirmationMessage);
             }
-            result.valid = !result.messages.length;
-            return result;
         }
 
         return result;
