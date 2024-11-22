@@ -49,7 +49,7 @@ export default function Link({
     ]);
     
     return (
-        <a {...props} className={classNameList}>
+        <a className={classNameList} {...props}>
             <div className="link__content">
                 { icon && iconPosition === 'left' && ( <Icon icon={icon} className={iconClassNameList}/> )}
                 <>

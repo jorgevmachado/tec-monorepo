@@ -4,20 +4,13 @@ import { Button, Dropdown, Link } from '@tec/ds/components';
 import { Image } from '@tec/ds/elements';
 import { type TContext } from '@tec/ds/utils';
 
-import { Menu } from '../../utils';
+import { Logo, Menu } from '../../utils';
 
 import './Header.scss';
 
-export interface LogoProps extends React.HTMLAttributes<HTMLDivElement> {
-    src: string;
-    alt: string;
-    title: string;
-    width?: number;
-    height?: number;
-}
 
 export interface HeaderProps {
-    logo?: LogoProps;
+    logo?: Logo;
     navbar?: Menu['items'];
     context?: TContext
     handleToggleMenu?: () => void;

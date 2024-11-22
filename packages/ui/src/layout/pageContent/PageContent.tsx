@@ -12,7 +12,7 @@ interface PageProps {
 
 export default function PageContent({ title, children }: PageProps) {
     return (
-        <div className="page">
+        <div className="page-content">
             {title && <Text tag="h1" weight="bold" variant="xlarge">{title}</Text>}
             <div>
                 {children}

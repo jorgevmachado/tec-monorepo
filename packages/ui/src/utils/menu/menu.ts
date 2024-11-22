@@ -1,5 +1,53 @@
 import type { Menu } from './interface';
 
+export const FAVORITE: Menu['items'][number] = {
+    key: 'favorite',
+    label: 'Favorite',
+    items: [{
+        key: 'favorite',
+        icon: 'like',
+        label: 'Favorite',
+        onRedirect: () =>  alert('Open Page Favorite')
+    }]
+};
+
+export const ASSOCIATE_MENU: Menu['items'][number] = {
+    key: 'associate',
+    label: 'Associate',
+    items: [
+        {
+            key: 'natural-person',
+            icon: 'user',
+            label: 'Natural Person',
+            onRedirect: () =>  alert('Open Page Natural Person')
+        },
+        {
+            key: 'legal-entity',
+            icon: 'document',
+            label: 'Legal entity',
+            onRedirect: () =>  alert('Open Page Legal entity')
+        }
+    ]
+};
+
+export const PROFILE_MENU: Menu['items'][number] = {
+    key: 'profile',
+    label: 'Profile',
+    items: [{
+        key: 'profile',
+        icon: 'user',
+        label: 'My data',
+        onRedirect: () =>  alert('Open Page Profile')
+    }],
+};
+
+export const LOGOUT_MENU: Menu['items'][number] = {
+    key: 'logout',
+    icon: 'exit',
+    label: 'logout',
+    onRedirect: () =>  alert('Logout')
+};
+
 export const NAVBAR: Menu = {
     key: 'navbar',
     items: [
@@ -35,30 +83,8 @@ export const NAVBAR: Menu = {
 export const SIDEBAR: Menu = {
     key: 'sidebar',
     items: [
-        {
-            key: 'profile',
-            label: 'Profile',
-            items: [
-                {
-                    key: 'profile',
-                    icon: 'user',
-                    label: 'My data',
-                    onRedirect: () =>  alert('Open Page Profile')
-                },
-            ],
-        },
-        {
-            key: 'logout',
-            label: '',
-            items: [
-                {
-                    icon: 'exit',
-                    key: 'logout',
-                    label: 'Logout',
-                    onRedirect: () =>  alert('Logout')
-                }
-            ]
-        }
+        PROFILE_MENU,
+        FAVORITE
     ]
 };
 
