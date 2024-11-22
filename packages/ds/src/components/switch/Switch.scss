@@ -1,0 +1,113 @@
+@import "../../styles/main";
+
+
+@mixin context ($color) {
+  .switch__button {
+    &[aria-checked="true"] {
+      border-color: $color;
+      background-color: $color;
+    }
+  }
+}
+
+.switch {
+  display: flex;
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__button {
+    width: calc( 40px + 4px);
+    border: 2px solid var(--color-neutral-80);
+    cursor: pointer;
+    height: 24px;
+    padding: 0;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 8px;
+    border-radius: 26px;
+    background-color: transparent;
+    --outline-offset: 2px;
+
+    @include focus;
+
+    &[disabled] {
+      cursor: default;
+    }
+
+    &:before {
+      top: 50%;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      content: "";
+      position: absolute;
+      transform: translate(2px, -50%);
+      transition: transform 0.3s;
+      border-radius: 50%;
+      background-color: var(--color-neutral-80);
+
+    }
+
+    &[aria-checked="true"] {
+      &:before {
+        transform: translate(1.4rem, -50%);
+        background-color: var(--color-white);
+      }
+    }
+  }
+
+  &__context {
+    &--info {
+      @include context(var(--color-info-80));
+    }
+    &--error {
+      @include context(var(--color-error-80));
+    }
+    &--neutral {
+      @include context(var(--color-neutral-80));
+    }
+    &--success {
+      @include context(var(--color-success-80));
+    }
+    &--primary {
+      @include context(var(--color-primary-80));
+    }
+    &--secondary {
+      @include context(var(--color-secondary-80));
+    }
+    &--attention {
+      @include context(var(--color-attention-80));
+    }
+  }
+
+  &[disabled] {
+    .switch__label,
+    .switch__button {
+      cursor: default;
+    }
+
+    .switch__button {
+      border-color: var(--color-neutral-70);
+      background-color: var(--color-neutral-70);
+    }
+  }
+
+  &__disabled {
+    cursor: default;
+    .text {
+      color: var(--color-neutral-70);
+      cursor: default;
+    }
+
+    .switch__button {
+      border-color: var(--color-neutral-70);
+
+      &:before {
+        background-color: var(--color-neutral-70);
+      }
+    }
+  }
+
+}
