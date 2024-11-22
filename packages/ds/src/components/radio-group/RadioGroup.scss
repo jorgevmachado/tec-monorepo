@@ -45,10 +45,10 @@
     &--button {
       width: 222px;
       display: inline-flex;
-      padding: 16px;
+      padding: var(--size-fixed-regular);
       position: relative;
       align-items: center;
-      border-radius: 8px;
+      border-radius: var(--border-radius-regular);
       justify-content: center;
 
       &#{&} {

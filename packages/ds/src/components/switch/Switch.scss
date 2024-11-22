@@ -18,17 +18,17 @@
   }
 
   &__button {
-    width: calc( 40px + 4px);
-    border: 2px solid var(--color-neutral-80);
+    width: calc( var(--size-fixed-xx-large) + var(--size-fixed-xx-tiny));
+    border: var(--size-fixed-x-tiny) solid var(--color-neutral-80);
     cursor: pointer;
-    height: 24px;
+    height: var(--size-fixed-medium);
     padding: 0;
     position: relative;
     flex-shrink: 0;
-    margin-right: 8px;
-    border-radius: 26px;
+    margin-right: var(--size-fixed-tiny);
+    border-radius: var(--size-fixed-x-medium);
     background-color: transparent;
-    --outline-offset: 2px;
+    --outline-offset: var(--size-fixed-x-tiny);
 
     @include focus;
 
@@ -39,11 +39,11 @@
     &:before {
       top: 50%;
       left: 0;
-      width: 16px;
-      height: 16px;
+      width: var(--size-fixed-regular);
+      height: var(--size-fixed-regular);
       content: "";
       position: absolute;
-      transform: translate(2px, -50%);
+      transform: translate(var(--size-fixed-x-tiny), -50%);
       transition: transform 0.3s;
       border-radius: 50%;
       background-color: var(--color-neutral-80);
