@@ -20,8 +20,12 @@
     }
   },
   "scripts": {
-    "watch": "rollup -c --watch",
-    "build": "rimraf dist && rollup -c",
+    "watch:finance": "BRAND=finance rollup -c --watch",
+    "watch:geek": "BRAND=geek rollup -c --watch",
+    "watch:law": "BRAND=law rollup -c --watch",
+    "build:finance": "rimraf dist && BRAND=finance rollup -c",
+    "build:geek": "rimraf dist && BRAND=geek rollup -c",
+    "build:law": "rimraf dist && BRAND=law rollup -c",
     "gen": "turbo gen ds",
     "lint": "eslint . --max-warnings 0 --fix",
     "storybook:finance": "BRAND=finance storybook dev -p 6006",

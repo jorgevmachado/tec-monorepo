@@ -9,39 +9,13 @@ import postcss from 'rollup-plugin-postcss';
 
 import sass from 'rollup-plugin-sass';
 
-const stylesheetPlugins = [
-    postcss({
-        use: [
-            ['sass', {
-                includePaths: [
-                    'node_modules',
-                    'src/styles',
-                    '@geek/tokens/dist/geek/css/_variables.css',
-                    '@geek/tokens/dist/geek/scss/_variables.scss',
-                ]
-            }]
-        ],
-        extract: true,
-        minimize: true,
-        extensions: ['.css', '.scss'],
-    }),
-    sass({
-        insert: true,
-        include: ['**/*.scss', '**/*.css'],
-        options: {
-            includePaths: [
-                'node_modules',
-                'src/styles'
-            ],
-        }
-    })
-];
+const brand = process.env.BRAND || "geek";
 
-const config = defineConfig({
+const createConfig = (brand) => defineConfig({
     input: glob.sync('src/**/index.ts'),
     output: [
         {
-            dir: path.dirname('dist/index.js'),
+            dir: path.dirname(`dist/index.js`),
             format: 'esm',
             sourcemap: true,
             preserveModules: true,
@@ -49,7 +23,7 @@ const config = defineConfig({
             silenceDeprecations: ['legacy-js-api'],
         },
         {
-            dir: path.dirname('dist/index.js'),
+            dir: path.dirname(`dist/index.js`),
             format: 'cjs',
             sourcemap: true,
             preserveModules: true,
@@ -60,8 +34,34 @@ const config = defineConfig({
     external: ["react/jsx-runtime"],
     plugins: [
         typescript({ tsconfig: "./tsconfig.json" }),
-        ...stylesheetPlugins
+        postcss({
+            use: [
+                ['sass', {
+                    includePaths: [
+                        'node_modules',
+                        'src/styles',
+                        `@geek/tokens/dist/${brand}/css/_variables.css`,
+                        `@geek/tokens/dist/${brand}/scss/_variables.scss`,
+                    ]
+                }]
+            ],
+            extract: true,
+            minimize: true,
+            extensions: ['.css', '.scss'],
+        }),
+        sass({
+            insert: true,
+            include: ['**/*.scss', '**/*.css'],
+            options: {
+                includePaths: [
+                    'node_modules',
+                    'src/styles'
+                ],
+            }
+        })
     ],
 })
 
-export default config;
+export default [
+    createConfig(brand),
+];

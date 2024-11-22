@@ -1,74 +1,28 @@
-# TEC MONOREPO
+<div align="center">
+  <h1>TEC-MONOREPO</h1>
+   <br/>
+   <p>
+    <strong>Powered by</strong>
 
-This is an official starter Turborepo, showing how Turborepo can be used with Rollup for bundling a `ui` package.
+![Turbo](https://img.shields.io/badge/Turborepo-orangered?style=for-the-badge&logo=turborepo&logoColor=white)
 
-brands: geek, finance and law
+![Nest](https://img.shields.io/badge/-NestJs-ea2845?style=for-the-badge&logo=nestjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=turborepo&logoColor=white)
+![Next](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 
-## What's inside?
+![React](https://shields.io/badge/react-black?logo=react&style=falt)
+![Npm](https://shields.io/badge/npm-gray?logo=npm&style=falt)
+![Typescript](https://img.shields.io/badge/typescript-%23323330.svg?style=falt&logo=typescript&logoColor=%233178C6)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=falt&logo=node.js&logoColor=white)
+![Jest](https://img.shields.io/badge/jest-C53d15.svg?style=falt&logo=jest&logoColor=white)
+</p>
+</div>
 
-This Turborepo includes the following packages/apps:
+<br/>
 
-### Apps and Packages
+## What is if for ?
+Project created with the aim of improving my knowledge of monorepo, nest, next, vite, typescript, jest and github actions.
 
-- `web`: a [Next.js](https://nextjs.org) app
-- `@tec/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@tec/typescript-config`: `tsconfig.json`s used throughout the monorepo
-- `@tec/ui`: a React component library used by the `web` application, compiled with Rollup
+## How to run
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+See [Running the aplication](HOW-TO-RUN.md)

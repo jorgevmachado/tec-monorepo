@@ -20,10 +20,14 @@
     }
   },
   "scripts": {
-    "build": "rimraf dist && tsc && tsc-alias -p tsconfig.aliases.json",
+    "build:finance": "rimraf dist && tsc && BRAND=finance tsc-alias -p tsconfig.aliases.json",
+    "build:geek": "rimraf dist && tsc && BRAND=geek tsc-alias -p tsconfig.aliases.json",
+    "build:law": "rimraf dist && tsc && BRAND=law tsc-alias -p tsconfig.aliases.json",
     "gen": "turbo gen ui",
     "lint": "eslint . --max-warnings 0 --fix",
-    "storybook": "storybook dev -p 6006",
+    "storybook:finance": "BRAND=finance storybook dev -p 6007",
+    "storybook:geek": "BRAND=geek storybook dev -p 6007",
+    "storybook:law": "BRAND=law storybook dev -p 6007",
     "build-storybook": "storybook build"
   },
   "devDependencies": {

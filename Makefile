@@ -79,15 +79,14 @@ business-clean:
 ui-clean:
 	$(call delete_in_project,packages/ui,dist)
 
-clean-builds:
+clean-dependencies-builds:
 	make ui-clean
-	make business-clean
 	make ds-clean
+	make business-clean
 	make tokens-clean
 	make services-clean
 
-
-clean-all: clean-dependencies clean-builds
+clean-all: clean-dependencies clean-dependencies-builds
 #------------------------------------------------- END ----------------------------------------------------------------#
 
 #------------------------------------------------- INSTALL ------------------------------------------------------------#
@@ -95,58 +94,114 @@ install:
 	yarn
 #------------------------------------------------- END ----------------------------------------------------------------#
 
-#------------------------------------------------- BUILD --------------------------------------------------------------#
-services-build-dirty:
-	$(call run_project,packages/services,build)
-
+#------------------------------------------ BUILD DEPENDENCIES --------------------------------------------------------#
 services-build:
-	make services-clean
 	$(call run_project,packages/services,build)
-
-tokens-build-dirty:
-	$(call run_project,packages/tokens,build)
 
 tokens-build:
-	make tokens-clean
 	$(call run_project,packages/tokens,build)
 
-ds-build-dirty:
-	$(call run_project,packages/ds,build)
-
-ds-build:
-	make ds-clean
-	$(call run_project,packages/ds,build)
-
-business-build-dirty:
-	$(call run_project,packages/business,build)
-
 business-build:
-	make business-clean
 	$(call run_project,packages/business,build)
-
-ui-build-dirty:
-	$(call run_project,packages/ui,build)
-
-ui-build:
-	make ui-clean
-	$(call run_project,packages/ui,build)
-
-build-dependencies-dirty:
-	make services-build-dirty
-	make tokens-build-dirty
-	make ds-build-dirty
-	make business-build-dirty
-	make ui-build-dirty
 
 build-dependencies:
 	make services-build
 	make tokens-build
-	make ds-build
 	make business-build
-	make ui-build
+
 #------------------------------------------------- END ----------------------------------------------------------------#
 
+#--------------------------------------------- SETUP DEPENDENCIES -----------------------------------------------------#
 setup:
 	make clean-all
 	make install
-	make build-dependencies-dirty
+	make build-dependencies
+
+#------------------------------------------- DEPENDENCIES BRAND FINANCE -----------------------------------------------#
+ds-finance-storybook:
+	$(call run_project,packages/ds,storybook:finance)
+
+ds-finance-watch:
+	$(call run_project,packages/ds,watch:finance)
+
+ui-finance-watch:
+	$(call run_project,packages/ds,build:finance)
+	$(call run_project,packages/ui,watch:finance)
+
+ui-finance-storybook:
+	$(call run_project,packages/ds,build:finance)
+	$(call run_project,packages/ui,storybook:finance)
+
+build-finance-dependencies:
+	$(call run_project,packages/ds,build:finance)
+	$(call run_project,packages/ui,build:finance)
+
+setup-finance:
+	make setup
+	$(call run_project,packages/ds,build:finance)
+	$(call run_project,packages/ui,build:finance)
+#------------------------------------------------- END ----------------------------------------------------------------#
+
+#------------------------------------------- DEPENDENCIES BRAND GEEK --------------------------------------------------#
+ds-geek-storybook:
+	$(call run_project,packages/ds,storybook:geek)
+
+ds-geek-watch:
+	$(call run_project,packages/ds,watch:geek)
+
+ui-geek-watch:
+	$(call run_project,packages/ds,build:geek)
+	$(call run_project,packages/ui,watch:geek)
+
+ui-geek-storybook:
+	$(call run_project,packages/ds,build:geek)
+	$(call run_project,packages/ui,storybook:geek)
+
+build-geek-dependencies:
+	$(call run_project,packages/ds,build:geek)
+	$(call run_project,packages/ui,build:geek)
+
+setup-geek:
+	make setup
+	$(call run_project,packages/ds,build:geek)
+	$(call run_project,packages/ui,build:geek)
+#------------------------------------------------- END ----------------------------------------------------------------#
+
+#------------------------------------------- DEPENDENCIES BRAND LAW ---------------------------------------------------#
+ds-law-storybook:
+	$(call run_project,packages/ds,storybook:law)
+
+ds-law-watch:
+	$(call run_project,packages/ds,watch:law)
+
+ui-law-watch:
+	$(call run_project,packages/ds,build:law)
+	$(call run_project,packages/ui,watch:law)
+
+ui-law-storybook:
+	$(call run_project,packages/ds,build:law)
+	$(call run_project,packages/ui,storybook:law)
+
+build-law-dependencies:
+	$(call run_project,packages/ds,build:law)
+	$(call run_project,packages/ui,build:law)
+
+setup-law:
+	make setup
+	$(call run_project,packages/ds,build:law)
+	$(call run_project,packages/ui,build:law)
+#------------------------------------------------- END ----------------------------------------------------------------#
+
+#------------------------------------------------- GEN ----------------------------------------------------------------#
+service-gen:
+	$(call run_project,packages/services,gen)
+
+business-gen:
+	$(call run_project,packages/business,gen)
+
+ds-gen:
+	$(call run_project,packages/ds,gen)
+
+ui-gen:
+	$(call run_project,packages/ui,gen)
+#------------------------------------------------- END ----------------------------------------------------------------#
