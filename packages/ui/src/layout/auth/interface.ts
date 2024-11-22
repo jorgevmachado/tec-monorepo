@@ -20,16 +20,20 @@ export interface AuthLink {
 }
 
 export interface OnAuthSubmit {
-    id?: User['id'];
-    cpf: User['cpf'];
-    role: User['role'];
-    name: User['name'];
-    email: User['email'];
-    gender: User['gender']
-    whatsUp: User['whatsUp'];
-    password: string;
-    dateOfBirth: User['dateOfBirth'];
-    passwordConfirmation: string;
+    valid: boolean;
+    result?: {
+        id?: User['id'];
+        cpf: User['cpf'];
+        role: User['role'];
+        name: User['name'];
+        email: User['email'];
+        gender: User['gender']
+        whatsUp: User['whatsUp'];
+        password: string;
+        dateOfBirth: User['dateOfBirth'];
+        passwordConfirmation: string;
+    };
+    messages: Array<string>;
 }
 
 export interface AuthProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onSubmit'>{
@@ -37,6 +41,7 @@ export interface AuthProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'o
     type: TAuth;
     logo?: LogoProps;
     title?: string;
+    context?: TContext;
     onSubmit?: (onSubmit: OnAuthSubmit) => void;
     signUpLink?: AuthLink;
     signInLink?: AuthLink;

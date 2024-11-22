@@ -6,10 +6,9 @@ import { EGender, ERole } from '@tec/business/api';
 
 import { joinClass } from '@tec/ds/utils';
 
-import { Button, Input, Radio } from '@tec/ds/components';
-import { Text } from '@tec/ds/elements';
+import { Button, Input, RadioGroup } from '@tec/ds/components';
 
-import { TAuth } from '../interface';
+import { OnAuthSubmit, TAuth } from '../interface';
 
 import { FormProps, TInput } from './interface';
 
@@ -18,6 +17,7 @@ import './Form.scss';
 export default function Form({
     user,
     type,
+    context,
     onSubmit,
     buttonLabel,
     ...props
@@ -26,34 +26,41 @@ export default function Form({
     const [cpf, setCpf] = useState<string>(user?.cpf ?? '');
     const [onBlurCpf, setOnBlurCpf] = useState<boolean>(false);
     const [invalidCpf, setInvalidCpf] = useState<boolean>(false);
+    const invalidCpfMessage: string = 'The field must be a valid CPF';
 
     const [name, setName] = useState<string>(user?.name ?? '');
     const [onBlurName, setOnBlurName] = useState<boolean>(false);
     const [invalidName, setInvalidName] = useState<boolean>(false);
+    const invalidNameMessage = 'The field must be a valid Name';
 
     const [email, setEmail] = useState<string>(user?.email ?? '');
     const [onBlurEmail, setOnBlurEmail] = useState<boolean>(false);
     const [invalidEmail, setInvalidEmail] = useState<boolean>(false);
+    const invalidEmailMessage = 'The field must be a valid email';
 
     const [gender, setGender] = useState<string>(user?.gender ?? '');
-    const [onBlurGender, setOnBlurGender] = useState<boolean>(false);
     const [invalidGender, setInvalidGender] = useState<boolean>(false);
+    const invalidGenderMessage = 'The field must be a valid Gender';
 
     const [whatsUp, setWhatsUp] = useState<string>(user?.whatsUp ?? '');
     const [onBlurWhatsUp, setOnBlurWhatsUp] = useState<boolean>(false);
     const [invalidWhatsUp, setInvalidWhatsUp] = useState<boolean>(false);
+    const invalidWhatsUpMessage = 'The field must be a valid WhatsUp';
 
     const [password, setPassword] = useState<string>('');
     const [onBlurPassword, setOnBlurPassword] = useState<boolean>(false);
     const [invalidPassword, setInvalidPassword] = useState<boolean>(false);
+    const invalidPasswordMessage = 'The field must be a valid password';
 
     const [dateOfBirth, setDateOfBirth] = useState<string>(user?.dateOfBirth?.toString() ?? '' );
     const [onBlurDateOfBirth, setOnBlurDateOfBirth] = useState<boolean>(false);
     const [invalidDateOfBirth, setInvalidDateOfBirth] = useState<boolean>(false);
+    const invalidDateOfBirthMessage = 'The field must be a valid date';
 
     const [passwordConfirmation, setPasswordConfirmation] = useState<string>('');
     const [onBlurPasswordConfirmation, setOnBlurPasswordConfirmation] = useState<boolean>(false);
     const [invalidPasswordConfirmation, setInvalidPasswordConfirmation] = useState<boolean>(false);
+    const invalidPasswordConfirmationMessage = 'The field must be a valid password';
 
     const validateInput = (blur: boolean,  value: string, type: TInput) => {
         if (blur) {
@@ -61,47 +68,55 @@ export default function Form({
                 case 'cpf': {
                     const valid = validator.isValidCpf(value);
                     setInvalidCpf(!valid);
-                    break;
+                    return valid;
                 }
                 case 'email': {
                     const valid = validator.isValidEmail(value);
                     setInvalidEmail(!valid);
-                    break;
+                    return valid;
                 }
                 case 'gender': {
                     const valid = value === 'MALE' || value === 'FEMALE';
                     setInvalidGender(!valid);
-                    break;
+                    return valid;
                 }
                 case 'whatsUp': {
-                    const valid = validator.isValidMobile(value);
+                    const valid = value !== '' ? validator.isValidMobile(value) : false;
                     setInvalidWhatsUp(!valid);
-                    break;
+                    return valid;
                 }
                 case 'password': {
                     const valid = validator.isValidPassword(value);
                     setInvalidPassword(!valid);
-                    break;
+                    return valid;
                 }
                 case 'dateOfBirth': {
-                    setInvalidDateOfBirth(false);
-                    break;
+                    const valid = value !== '';
+                    setInvalidDateOfBirth(!valid);
+                    return valid;
                 }
                 case 'passwordConfirmation': {
                     const valid = validator.isValidPassword(value);
                     setInvalidPasswordConfirmation(!valid);
-                    break;
+                    return valid;
                 }
                 case 'name':
                 default: {
-                    setInvalidName(false);
-                    break;
+                    const valid = value !== '';
+                    setInvalidName(!valid);
+                    return valid;
                 }
             }
         }
+        return false;
     };
 
     const validateAll = (type: TAuth ) => {
+        const result: OnAuthSubmit = {
+            valid: false,
+            result: undefined,
+            messages: []
+        };
         setInvalidCpf(false);
         setInvalidName(false);
         setInvalidEmail(false);
@@ -111,47 +126,112 @@ export default function Form({
         setInvalidDateOfBirth(false);
         setInvalidPasswordConfirmation(false);
         
-        validateInput(true, email, 'email');
-
-        if (type ==='signIn' || type ==='signUp') {
-            validateInput(true, password, 'password');
+        
+        if (type === 'signIn') {
+            const validEmail = validateInput(true, email, 'email');
+            if (!validEmail) {
+                result.messages.push(invalidEmailMessage);
+            }
+            const validPassword = validateInput(true, password, 'password');
+            if (!validPassword) {
+                result.messages.push(invalidPasswordMessage);
+            }
+            result.valid = !result.messages.length; 
+            return result; 
+        }
+        
+        if (type ==='signUp') {
+            const validCpf = validateInput(true, cpf, 'cpf');
+            if (!validCpf) {
+                result.messages.push(invalidCpfMessage);
+            }
+            const validName = validateInput(true, name, 'name');
+            if (!validName) {
+                result.messages.push(invalidNameMessage);
+            }
+            const validEmail = validateInput(true, email, 'email');
+            if (!validEmail) {
+                result.messages.push(invalidEmailMessage);
+            }
+            const validGender = validateInput(true, gender, 'gender');
+            if (!validGender) {
+                result.messages.push(invalidGenderMessage);
+            }
+            const validWhatsUp = validateInput(true, whatsUp, 'whatsUp');
+            if (!validWhatsUp) {
+                result.messages.push(invalidWhatsUpMessage);
+            }
+            const validDateOfBirth = validateInput(true, dateOfBirth, 'dateOfBirth');
+            if (!validDateOfBirth) {
+                result.messages.push(invalidDateOfBirthMessage);
+            }
+            const validPassword = validateInput(true, password, 'password');
+            if (!validPassword) {
+                result.messages.push(invalidPasswordMessage);
+            }
+            const validPasswordConfirmation = validateInput(true, passwordConfirmation, 'passwordConfirmation');
+            if (!validPasswordConfirmation) {
+                result.messages.push(invalidPasswordConfirmationMessage);
+            }
+            result.valid = !result.messages.length;
+            return result;
+        }
+        
+        if (type === 'update') {
+            const validCpf = validateInput(true, cpf, 'cpf');
+            if (!validCpf) {
+                result.messages.push(invalidCpfMessage);
+            }
+            const validName = validateInput(true, name, 'name');
+            if (!validName) {
+                result.messages.push(invalidNameMessage);
+            }
+            const validEmail = validateInput(true, email, 'email');
+            if (!validEmail) {
+                result.messages.push(invalidEmailMessage);
+            }
+            const validGender = validateInput(true, gender, 'gender');
+            if (!validGender) {
+                result.messages.push(invalidGenderMessage);
+            }
+            const validWhatsUp = validateInput(true, whatsUp, 'whatsUp');
+            if (!validWhatsUp) {
+                result.messages.push(invalidWhatsUpMessage);
+            }
+            const validDateOfBirth = validateInput(true, dateOfBirth, 'dateOfBirth');
+            if (!validDateOfBirth) {
+                result.messages.push(invalidDateOfBirthMessage);
+            }
+            result.valid = !result.messages.length;
+            return result;
         }
 
-        if (type === 'signUp') {
-            validateInput(true, passwordConfirmation, 'passwordConfirmation');
+        if (type === 'forgotPassword') {
+            const validPassword = validateInput(true, password, 'password');
+            if (!validPassword) {
+                result.messages.push(invalidPasswordMessage);
+            }
+            const validPasswordConfirmation = validateInput(true, passwordConfirmation, 'passwordConfirmation');
+            if (!validPasswordConfirmation) {
+                result.messages.push(invalidPasswordConfirmationMessage);
+            }
+            result.valid = !result.messages.length;
+            return result;
         }
 
-        if (type === 'signUp' || type === 'update') {
-            validateInput(true, cpf, 'cpf');
-            validateInput(true, name, 'name');
-            validateInput(true, email, 'email');
-            validateInput(true, gender, 'gender');
-            validateInput(true, whatsUp, 'whatsUp');
-            validateInput(true, dateOfBirth, 'dateOfBirth');
-        }
+        return result;
+
     };
     
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         
-        validateAll(type);
-
-        // TODO REMEMBER TO REMOVE
-        console.log('# => invalidGender => ', invalidGender);
-
-        const valid =
-            !invalidCpf &&
-            !invalidName &&
-            !invalidEmail &&
-            !invalidGender &&
-            !invalidPassword &&
-            !invalidDateOfBirth &&
-            !invalidPasswordConfirmation;
+        const onAuthSubmit = validateAll(type);
         
-        if (valid) {
+        if (onAuthSubmit.valid) {
             const currentGender = gender as EGender;
             const currentDateOfBirth = new Date(dateOfBirth);
-            onSubmit({
+            onAuthSubmit.result = {
                 id: user?.id ?? '',
                 cpf,
                 role: user?.role ?? ERole.USER,
@@ -162,8 +242,10 @@ export default function Form({
                 password,
                 dateOfBirth: currentDateOfBirth,
                 passwordConfirmation
-            });
+            };
         }
+
+        onSubmit(onAuthSubmit);
     };
 
 
@@ -180,8 +262,8 @@ export default function Form({
     }, [email, onBlurEmail]);
 
     useEffect(() => {
-        validateInput(onBlurGender, gender, 'gender');
-    }, [gender, onBlurGender]);
+        validateInput(false, gender, 'gender');
+    }, [gender]);
 
     useEffect(() => {
         validateInput(onBlurWhatsUp, whatsUp, 'whatsUp');
@@ -214,9 +296,9 @@ export default function Form({
                         variant="regular"
                         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                         isInvalid={invalidEmail}
-                        iconContext="primary"
+                        iconContext={context}
                         placeholder={`Enter your ${type === 'signUp' ? 'best' : ''} e-mail`}
-                        invalidMessage="The field must be a valid email"
+                        invalidMessage={invalidEmailMessage}
                     />
                 </div>
             )}
@@ -232,9 +314,9 @@ export default function Form({
                             variant="regular"
                             onInput={(e: React.ChangeEvent<HTMLInputElement>) => setCpf(e.target.value)}
                             isInvalid={invalidCpf}
-                            iconContext="primary"
+                            iconContext={context}
                             placeholder="Enter your CPF"
-                            invalidMessage="The field must be a valid CPF"
+                            invalidMessage={invalidCpfMessage}
                         />
                     </div>
                     <div className="form__name">
@@ -246,9 +328,9 @@ export default function Form({
                             variant="regular"
                             onInput={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
                             isInvalid={invalidName}
-                            iconContext="primary"
+                            iconContext={context}
                             placeholder="Enter your Fullname"
-                            invalidMessage="The field must be a valid Name"
+                            invalidMessage={invalidNameMessage}
                         />
                     </div>
                     <div className="form__whats-up">
@@ -260,33 +342,31 @@ export default function Form({
                             variant="regular"
                             onInput={(e: React.ChangeEvent<HTMLInputElement>) => setWhatsUp(e.target.value)}
                             isInvalid={invalidWhatsUp}
-                            iconContext="primary"
+                            iconContext={context}
                             placeholder="Enter your WhatsUp"
-                            invalidMessage="The field must be a valid WhatsUp"
+                            invalidMessage={invalidWhatsUpMessage}
                         />
                     </div>
                     <div className="form__gender">
-                        <Text variant="large">Gender</Text>
-                        <Radio
-                            value="MALE"
-                            context="primary"
+                        <RadioGroup
+                            label="Gender"
+                            options={[
+                                {
+                                    label: 'Male',
+                                    value: EGender.MALE
+                                },
+                                {
+                                    label: 'Female',
+                                    value: EGender.FEMALE
+                                }
+                            ]}
+                            context={context}
+                            appearance="standard"
                             modelValue={gender}
-                            onItemClick={(value) => {
-                                setGender(value as EGender);
-                                setOnBlurGender(true);
-                            }}>
-                            Masculino
-                        </Radio>
-                        <Radio
-                            value="FEMALE"
-                            context="primary"
-                            modelValue={gender}
-                            onItemClick={(value) => {
-                                setGender(value as EGender);
-                                setOnBlurGender(true);
-                            }}>
-                            Feminino
-                        </Radio>
+                            onClick={(event) => event.preventDefault()}
+                            onActionClick={(value) => setGender(value as EGender)}
+                            requiredMessage={ invalidGender ? invalidGenderMessage : ''}
+                        />
                     </div>
                     <div className="form__date-of-birth">
                         <Input
@@ -297,9 +377,9 @@ export default function Form({
                             variant="regular"
                             onInput={(e: React.ChangeEvent<HTMLInputElement>) => setDateOfBirth(e.target.value)}
                             isInvalid={invalidDateOfBirth}
-                            iconContext="primary"
+                            iconContext={context}
                             placeholder="Enter your date of birth"
-                            invalidMessage="The field must be a valid date"
+                            invalidMessage={invalidDateOfBirthMessage}
                         />
                     </div>
                 </>
@@ -314,9 +394,9 @@ export default function Form({
                         variant="regular"
                         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
                         isInvalid={invalidPassword}
-                        iconContext="primary"
+                        iconContext={context}
                         placeholder={`Enter your ${type === 'signUp' ? 'best' : ''} Password`}
-                        invalidMessage="The field must be a valid password"
+                        invalidMessage={invalidPasswordMessage}
                     />
                 </div>
             )}
@@ -330,15 +410,15 @@ export default function Form({
                         variant="regular"
                         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setPasswordConfirmation(e.target.value)}
                         isInvalid={invalidPasswordConfirmation}
-                        iconContext="primary"
+                        iconContext={context}
                         placeholder="Confirm your password"
-                        invalidMessage="The field must be a valid password"
+                        invalidMessage={invalidPasswordConfirmationMessage}
                     />
                 </div>
             )}
 
             <div className="form__button">
-                <Button type="submit" fluid context="primary">{buttonLabel}</Button>
+                <Button type="submit" fluid context={context}>{buttonLabel}</Button>
             </div>
         </form>
     );

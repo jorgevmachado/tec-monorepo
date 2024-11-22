@@ -82,7 +82,7 @@ const RenderTemplate = (args: RadioGroupProps) => {
         args.modelValue as string | number | Array<string | number>
     );
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <RadioGroup
                 onActionClick={(value) => {
                     setModel(value);
@@ -90,7 +90,6 @@ const RenderTemplate = (args: RadioGroupProps) => {
                 {...args}
                 modelValue={model}
             />
-            <br />
             {model && <p>Model value: {model}</p>}
         </div>
     );

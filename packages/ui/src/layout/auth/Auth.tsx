@@ -17,6 +17,7 @@ export default function Auth({
     type,
     logo,
     title,
+    context = 'neutral',
     onSubmit,
     signUpLink,
     signInLink,
@@ -81,6 +82,7 @@ export default function Auth({
                 <Form
                     user={user}
                     type={type}
+                    context={context}
                     onSubmit={onSubmit}
                     className="auth__form"
                     buttonLabel={buttonLabel}
@@ -88,14 +90,14 @@ export default function Auth({
             )}
             <div className="auth__action">
                 { (forgotPasswordLink && !isUpdate && !isForgotPassword) && (
-                    <ActionLink {...forgotPasswordLink} className="auth__action--forgot-password" />
+                    <ActionLink {...forgotPasswordLink} context={context} className="auth__action--forgot-password" />
                 )}
                 { (signUpLink && isSignIn) && (
-                    <ActionLink {...signUpLink} className="auth__action--signUp"/>
+                    <ActionLink {...signUpLink} context={context} className="auth__action--signUp"/>
                 )}
 
                 { (signInLink && isSignUp) && (
-                    <ActionLink {...signInLink} className="auth__action--signIn"/>
+                    <ActionLink {...signInLink} context={context} className="auth__action--signIn"/>
                 )}
             </div>
         </div>

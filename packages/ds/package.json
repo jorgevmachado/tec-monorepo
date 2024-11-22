@@ -20,7 +20,7 @@
     }
   },
   "scripts": {
-    "dev": "echo 'Add dev script here'",
+    "watch": "rollup -c --watch",
     "build": "rimraf dist && rollup -c",
     "gen": "turbo gen ds",
     "lint": "eslint . --max-warnings 0 --fix",
