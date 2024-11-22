@@ -25,7 +25,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: 'list',
         name: 'type',
         message: 'What type of file should be created ?',
-        choices: ['animations', 'layout']
+        choices: ['layout', 'components', 'animations']
       }
     ],
     actions: [
