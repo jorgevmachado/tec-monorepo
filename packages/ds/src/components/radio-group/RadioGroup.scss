@@ -1,10 +1,30 @@
 @import "../../styles/main";
 
-$outline-width: 2px;
-// color for selected button, its box shadow and outlined button focus
-$token-new-radio-group-outline-color: #ff5e00;
-// color for box-shadow on hover when its value is selected
-$token-new-radio-group-selected-color: #b8c317;
+@mixin context($outlineColor, $selectedColor) {
+  .radio-group__container--button {
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: 0 0 0 1px $outlineColor inset;
+
+      &:nth-of-type(n + 2) {
+        border-left-width: 0;
+      }
+    }
+
+    &-selected {
+      box-shadow: 0 0 0 1px $outlineColor inset;
+
+      &:hover {
+        box-shadow: 0 0 0 1px $selectedColor inset;
+      }
+
+      &:focus {
+        border-color: $selectedColor;
+      }
+    }
+  }
+}
 
 .radio-group {
   display: flex;
@@ -31,7 +51,6 @@ $token-new-radio-group-selected-color: #b8c317;
       border-radius: 8px;
       justify-content: center;
 
-      // override button outline specifity with same value
       &#{&} {
         border-width: 1px;
       }
@@ -54,28 +73,6 @@ $token-new-radio-group-selected-color: #b8c317;
         border-bottom-left-radius: 0;
       }
 
-      &:focus,
-      &:hover {
-        outline: none;
-        box-shadow: 0 0 0 1px $token-new-radio-group-outline-color inset;
-
-        &:nth-of-type(n + 2) {
-          border-left-width: 0;
-        }
-      }
-
-      &-selected {
-        box-shadow: 0 0 0 1px $token-new-radio-group-outline-color inset;
-
-        &:hover {
-          box-shadow: 0 0 0 1px $token-new-radio-group-selected-color inset;
-        }
-
-        &:focus {
-          border-color: $token-new-radio-group-selected-color;
-        }
-      }
-
       &-error:not(:disabled) {
         color: var(--color-error-100);
         border-color: var(--color-error-100);
@@ -93,10 +90,6 @@ $token-new-radio-group-selected-color: #b8c317;
     }
   }
 
-
-
-
-
   &__appearance--range &__container--button {
     width: 58px;
 
@@ -104,4 +97,29 @@ $token-new-radio-group-selected-color: #b8c317;
       border-width: 1px;
     }
   }
+
+  &__context {
+    &--info {
+      @include context(var(--color-info-80), var(--color-info-80));
+    }
+    &--error {
+      @include context(var(--color-error-80), var(--color-error-80));
+    }
+    &--neutral {
+      @include context(var(--color-neutral-80), var(--color-neutral-80));
+    }
+    &--success {
+      @include context(var(--color-success-80), var(--color-success-80));
+    }
+    &--primary {
+      @include context(var(--color-primary-80), var(--color-primary-80));
+    }
+    &--secondary {
+      @include context(var(--color-secondary-80), var(--color-secondary-80));
+    }
+    &--attention {
+      @include context(var(--color-attention-80), var(--color-attention-80));
+    }
+  }
+
 }

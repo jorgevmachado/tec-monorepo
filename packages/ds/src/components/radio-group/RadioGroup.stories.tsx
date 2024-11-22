@@ -1,10 +1,11 @@
 import * as React from 'react';
+import { useState } from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { OContext } from '../../utils';
+
 import RadioGroup, { RadioGroupProps } from './RadioGroup';
-import { useState } from 'react';
-import {OContext} from '../../utils';
 
 const defaultExample = [
     { value: 'pessoa-fisica', label: 'Pessoa Física' },
@@ -34,7 +35,7 @@ const meta = {
         context: {
             table: {
                 type: { summary: 'string' },
-                defaultValue: { summary: 'primary' },
+                defaultValue: { summary: 'neutral' },
             },
             options: OContext,
             control: { type: 'select' },
