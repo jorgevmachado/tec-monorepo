@@ -24,7 +24,9 @@
     "build": "rimraf dist && rollup -c",
     "gen": "turbo gen ds",
     "lint": "eslint . --max-warnings 0 --fix",
-    "storybook": "storybook dev -p 6006",
+    "storybook:finance": "BRAND=finance storybook dev -p 6006",
+    "storybook:geek": "BRAND=geek storybook dev -p 6006",
+    "storybook:law": "BRAND=law storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "devDependencies": {

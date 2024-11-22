@@ -1,14 +1,8 @@
-# Turborepo starter with Rollup
+# TEC MONOREPO
 
 This is an official starter Turborepo, showing how Turborepo can be used with Rollup for bundling a `ui` package.
 
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-rollup
-```
+brands: geek, finance and law
 
 ## What's inside?
 
